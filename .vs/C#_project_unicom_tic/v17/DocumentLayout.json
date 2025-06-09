@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ut010025\\Desktop\\C#_project_unicom_tic\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|c:\\users\\ut010025\\desktop\\c#_project_unicom_tic\\c#_project_unicom_tic\\data\\db_tables_.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|solutionrelative:c#_project_unicom_tic\\data\\db_tables_.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|c:\\users\\ut010025\\desktop\\c#_project_unicom_tic\\c#_project_unicom_tic\\modals\\exam_modal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|solutionrelative:c#_project_unicom_tic\\modals\\exam_modal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|C:\\Users\\ut010025\\Desktop\\C#_project_unicom_tic\\c#_project_unicom_tic\\modals\\staf_modal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|solutionrelative:c#_project_unicom_tic\\modals\\staf_modal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|C:\\Users\\ut010025\\Desktop\\C#_project_unicom_tic\\c#_project_unicom_tic\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|solutionrelative:c#_project_unicom_tic\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Exam_modal.cs",
+              "DocumentMoniker": "C:\\Users\\ut010025\\Desktop\\C#_project_unicom_tic\\C#_project_unicom_tic\\modals\\Exam_modal.cs",
+              "RelativeDocumentMoniker": "C#_project_unicom_tic\\modals\\Exam_modal.cs",
+              "ToolTip": "C:\\Users\\ut010025\\Desktop\\C#_project_unicom_tic\\C#_project_unicom_tic\\modals\\Exam_modal.cs",
+              "RelativeToolTip": "C#_project_unicom_tic\\modals\\Exam_modal.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T08:16:17.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "staf_modal.cs",
+              "DocumentMoniker": "C:\\Users\\ut010025\\Desktop\\C#_project_unicom_tic\\C#_project_unicom_tic\\modals\\staf_modal.cs",
+              "RelativeDocumentMoniker": "C#_project_unicom_tic\\modals\\staf_modal.cs",
+              "ToolTip": "C:\\Users\\ut010025\\Desktop\\C#_project_unicom_tic\\C#_project_unicom_tic\\modals\\staf_modal.cs",
+              "RelativeToolTip": "C#_project_unicom_tic\\modals\\staf_modal.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T06:47:52.992Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DB_tables_.cs",
+              "DocumentMoniker": "C:\\Users\\ut010025\\Desktop\\C#_project_unicom_tic\\C#_project_unicom_tic\\data\\DB_tables_.cs",
+              "RelativeDocumentMoniker": "C#_project_unicom_tic\\data\\DB_tables_.cs",
+              "ToolTip": "C:\\Users\\ut010025\\Desktop\\C#_project_unicom_tic\\C#_project_unicom_tic\\data\\DB_tables_.cs",
+              "RelativeToolTip": "C#_project_unicom_tic\\data\\DB_tables_.cs",
+              "ViewState": "AQIAAFUAAAAAAAAAAAAiwHQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T04:42:31.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ut010025\\Desktop\\C#_project_unicom_tic\\C#_project_unicom_tic\\Form1.cs",
+              "RelativeDocumentMoniker": "C#_project_unicom_tic\\Form1.cs",
+              "ToolTip": "C:\\Users\\ut010025\\Desktop\\C#_project_unicom_tic\\C#_project_unicom_tic\\Form1.cs [Design]",
+              "RelativeToolTip": "C#_project_unicom_tic\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T03:39:32.317Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

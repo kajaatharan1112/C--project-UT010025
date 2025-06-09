@@ -1,0 +1,13 @@
+C:\Users\ut010025\Desktop\C#_project_unicom_tic\C#_project_unicom_tic\bin\Debug\C#_project_unicom_tic.exe.config
+C:\Users\ut010025\Desktop\C#_project_unicom_tic\C#_project_unicom_tic\bin\Debug\C#_project_unicom_tic.exe
+C:\Users\ut010025\Desktop\C#_project_unicom_tic\C#_project_unicom_tic\bin\Debug\C#_project_unicom_tic.pdb
+C:\Users\ut010025\Desktop\C#_project_unicom_tic\C#_project_unicom_tic\bin\Debug\System.Data.SQLite.dll
+C:\Users\ut010025\Desktop\C#_project_unicom_tic\C#_project_unicom_tic\bin\Debug\System.Data.SQLite.xml
+C:\Users\ut010025\Desktop\C#_project_unicom_tic\C#_project_unicom_tic\obj\Debug\C#_project_unicom_tic.csproj.AssemblyReference.cache
+C:\Users\ut010025\Desktop\C#_project_unicom_tic\C#_project_unicom_tic\obj\Debug\C__project_unicom_tic.Form1.resources
+C:\Users\ut010025\Desktop\C#_project_unicom_tic\C#_project_unicom_tic\obj\Debug\C__project_unicom_tic.Properties.Resources.resources
+C:\Users\ut010025\Desktop\C#_project_unicom_tic\C#_project_unicom_tic\obj\Debug\C#_project_unicom_tic.csproj.GenerateResource.cache
+C:\Users\ut010025\Desktop\C#_project_unicom_tic\C#_project_unicom_tic\obj\Debug\C#_project_unicom_tic.csproj.CoreCompileInputs.cache
+C:\Users\ut010025\Desktop\C#_project_unicom_tic\C#_project_unicom_tic\obj\Debug\C#_proje.38EAD447.Up2Date
+C:\Users\ut010025\Desktop\C#_project_unicom_tic\C#_project_unicom_tic\obj\Debug\C#_project_unicom_tic.exe
+C:\Users\ut010025\Desktop\C#_project_unicom_tic\C#_project_unicom_tic\obj\Debug\C#_project_unicom_tic.pdb
