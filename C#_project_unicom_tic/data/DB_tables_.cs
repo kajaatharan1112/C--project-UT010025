@@ -57,6 +57,14 @@ namespace C__project_unicom_tic.data
                     );
 
 
+                    CREATE TABLE IF NOT EXISTS Course_Teacher (
+                        Corse_Id INTEGER NOT NULL,
+                        Teacher_Id INTEGER NOT NULL,
+                        PRIMARY KEY (Corse_Id, Teacher_Id),
+                        FOREIGN KEY (Corse_Id) REFERENCES Corse_table(Id),
+                        FOREIGN KEY (Teacher_Id) REFERENCES Teacher_table(Id)
+                    );
+
 
                     CREATE TABLE IF NOT EXISTS Staf_table (         
                         Id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -80,7 +88,7 @@ namespace C__project_unicom_tic.data
 
 
                  CREATE TABLE IF NOT EXISTS time_table (
-                        date TEXT PRIMARY KEY AUTOINCREMENT,
+                        date TEXT NOT NULL PRIMARY KEY ,
                         Teacher_Id INTEGER NOT NULL,
                         Corse_Id INTEGER NOT NULL,
                         Time_Lap_Id INTEGER NOT NULL,
@@ -113,7 +121,15 @@ namespace C__project_unicom_tic.data
                         FOREIGN KEY (Teacher_Id) REFERENCES Teacher_table(Id),
                         CHECK (Id > 1000 AND Id < 9999)
                    );
-
+                    CREATE TABLE IF NOT EXISTS Marks_table (
+                        Student_Id INTEGER NOT NULL,
+                        Exam_Id INTEGER NOT NULL,
+                        Exam_marks INTEGER NOT NULL, 
+                        PRIMARY KEY (Student_Id, Exam_Id),
+                        FOREIGN KEY (Student_Id) REFERENCES Student_table(Id),
+                        FOREIGN KEY (Exam_Id) REFERENCES Exam_table(Id)
+                  );
+                  
 
                     ";
                 
