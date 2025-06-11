@@ -1,4 +1,5 @@
-﻿using System;
+﻿using C__project_unicom_tic.data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -14,6 +15,7 @@ namespace C__project_unicom_tic
         [STAThread]
         static void Main()
         {
+            DB_tables_.CreateTables();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
