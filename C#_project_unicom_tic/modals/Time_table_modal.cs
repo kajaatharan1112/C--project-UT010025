@@ -8,6 +8,7 @@ namespace C__project_unicom_tic.modals
 {
     internal class Time_table_modal
     {
+        public int Id {  get; set; }
         public string Date {  get; set; }
         public int Teacher_id {  get; set; }
         public int Corse_id {  get; set; }

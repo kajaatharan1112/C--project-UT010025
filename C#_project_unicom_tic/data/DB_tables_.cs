@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SQLite;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,7 +14,7 @@ namespace C__project_unicom_tic.data
             using (var connection = DB_connection.Get_Connection())
             {
                 string command = @"
-                    CREATE TABLE IF NOT EXISTS Admin_table (         
+                  CREATE TABLE IF NOT EXISTS Admin_table (         
                         Id INTEGER PRIMARY KEY AUTOINCREMENT,
                         Name TEXT NOT NULL,
                         Nic_number INTEGER NOT NULL,
@@ -57,7 +58,7 @@ namespace C__project_unicom_tic.data
                     );
 
 
-                    CREATE TABLE IF NOT EXISTS Course_Teacher (
+                  CREATE TABLE IF NOT EXISTS Course_Teacher (
                         Corse_Id INTEGER NOT NULL,
                         Teacher_Id INTEGER NOT NULL,
                         PRIMARY KEY (Corse_Id, Teacher_Id),
@@ -66,7 +67,7 @@ namespace C__project_unicom_tic.data
                     );
 
 
-                    CREATE TABLE IF NOT EXISTS Staf_table (         
+                  CREATE TABLE IF NOT EXISTS Staf_table (         
                         Id INTEGER PRIMARY KEY AUTOINCREMENT,
                         Name TEXT NOT NULL,
                         Nic_number INTEGER NOT NULL,
@@ -88,7 +89,8 @@ namespace C__project_unicom_tic.data
 
 
                  CREATE TABLE IF NOT EXISTS time_table (
-                        date TEXT NOT NULL PRIMARY KEY ,
+                        Id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+                        date TEXT NOT NULL,
                         Teacher_Id INTEGER NOT NULL,
                         Corse_Id INTEGER NOT NULL,
                         Time_Lap_Id INTEGER NOT NULL,
@@ -96,11 +98,12 @@ namespace C__project_unicom_tic.data
                         FOREIGN KEY (Corse_Id) REFERENCES Corse_table(Id),
                         FOREIGN KEY (Teacher_Id) REFERENCES Teacher_table(Id)
                         FOREIGN KEY (class_Id) REFERENCES  Class_table(Id)
+                        CHECK (Id > 10000000 AND Id < 99999999)
                    );
 
 
 
-                    CREATE TABLE IF NOT EXISTS Student_table (
+                 CREATE TABLE IF NOT EXISTS Student_table (
                         Id INTEGER PRIMARY KEY AUTOINCREMENT,
                         Name TEXT NOT NULL,
                         Corse_Id INTEGER,
@@ -112,7 +115,7 @@ namespace C__project_unicom_tic.data
                         CHECK (Id > 600000 AND Id < 990000)
                     );
 
-                    CREATE TABLE IF NOT EXISTS Exam_table (
+                 CREATE TABLE IF NOT EXISTS Exam_table (
                         Id INTEGER PRIMARY KEY AUTOINCREMENT,
                         Name TEXT NOT NULL,
                         Teacher_Id INTEGER NOT NULL,
@@ -121,7 +124,7 @@ namespace C__project_unicom_tic.data
                         FOREIGN KEY (Teacher_Id) REFERENCES Teacher_table(Id),
                         CHECK (Id > 1000 AND Id < 9999)
                    );
-                    CREATE TABLE IF NOT EXISTS Marks_table (
+                 CREATE TABLE IF NOT EXISTS Marks_table (
                         Student_Id INTEGER NOT NULL,
                         Exam_Id INTEGER NOT NULL,
                         Exam_marks INTEGER NOT NULL, 
@@ -129,9 +132,35 @@ namespace C__project_unicom_tic.data
                         FOREIGN KEY (Student_Id) REFERENCES Student_table(Id),
                         FOREIGN KEY (Exam_Id) REFERENCES Exam_table(Id)
                   );
-                  
+                
+                 CREATE TABLE IF NOT EXISTS Teacher_Attendence(
+                        date TEXT NOT NULL PRIMARY KEY,
+                        Teacher_Id INTEGER NOT NULL,
+                        Status TEXT NOT NULL,
+                        FOREIGN KEY (Teacher_Id) REFERENCES Teacher_table(Id)
+                    );
+
+                 CREATE TABLE IF NOT EXISTS student_Attendence(
+                        date TEXT NOT NULL PRIMARY KEY,
+                        Student_Id INTEGER NOT NULL,
+                        class_Id INTEGER NOT NULL,
+                        Status TEXT NOT NULL,
+                        FOREIGN KEY (class_Id) REFERENCES time_table(Id),
+                        FOREIGN KEY (Student_Id) REFERENCES Student_table(Id)
+                        
+                    );
+                    
+                  CREATE TABLE IF NOT EXISTS Staf_Attendence(
+                        date TEXT NOT NULL PRIMARY KEY,
+                        Staf_Id INTEGER NOT NULL,
+                        Status TEXT NOT NULL,
+                        FOREIGN KEY (Staf_Id) REFERENCES Staf_table(Id)
+                    );
+
 
                     ";
+                SQLiteCommand cmd=new SQLiteCommand(command, connection);
+                cmd.ExecuteNonQuery();
                 
             }
         }

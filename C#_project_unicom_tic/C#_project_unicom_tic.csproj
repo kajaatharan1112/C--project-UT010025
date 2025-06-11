@@ -63,8 +63,12 @@
     <Compile Include="modals\class_modal.cs" />
     <Compile Include="modals\Corse_modal.cs" />
     <Compile Include="modals\Exam_modal.cs" />
+    <Compile Include="modals\marks_modal.cs" />
+    <Compile Include="modals\staf_attendnce_mosal.cs" />
     <Compile Include="modals\staf_modal.cs" />
+    <Compile Include="modals\student_attendnce_modal.cs" />
     <Compile Include="modals\student_modal.cs" />
+    <Compile Include="modals\teacher_attendnce_modal.cs" />
     <Compile Include="modals\teacher_modl.cs" />
     <Compile Include="modals\Time_table_modal.cs" />
     <Compile Include="modals\user_modal.cs" />
