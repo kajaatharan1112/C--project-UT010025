@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\UT010025\\Desktop\\clone\\C--project-UT010025\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|c:\\users\\ut010025\\desktop\\clone\\c--project-ut010025\\c#_project_unicom_tic\\formes\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|c:\\users\\ut010025\\desktop\\clone\\c--project-ut010025\\c#_project_unicom_tic\\formes\\buttion_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|solutionrelative:c#_project_unicom_tic\\formes\\buttion_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|C:\\Users\\UT010025\\Desktop\\clone\\C--project-UT010025\\c#_project_unicom_tic\\formes\\login_form_.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|solutionrelative:c#_project_unicom_tic\\formes\\login_form_.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|C:\\Users\\UT010025\\Desktop\\clone\\C--project-UT010025\\c#_project_unicom_tic\\formes\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|solutionrelative:c#_project_unicom_tic\\formes\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|c:\\users\\ut010025\\desktop\\clone\\c--project-ut010025\\c#_project_unicom_tic\\formes\\login_form_.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|solutionrelative:c#_project_unicom_tic\\formes\\login_form_.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|c:\\users\\ut010025\\desktop\\clone\\c--project-ut010025\\c#_project_unicom_tic\\formes\\login_form_.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|solutionrelative:c#_project_unicom_tic\\formes\\login_form_.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|c:\\users\\ut010025\\desktop\\clone\\c--project-ut010025\\c#_project_unicom_tic\\formes\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,24 +30,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\UT010025\\Desktop\\clone\\C--project-UT010025\\C#_project_unicom_tic\\formes\\Form1.cs",
+              "RelativeDocumentMoniker": "C#_project_unicom_tic\\formes\\Form1.cs",
+              "ToolTip": "C:\\Users\\UT010025\\Desktop\\clone\\C--project-UT010025\\C#_project_unicom_tic\\formes\\Form1.cs",
+              "RelativeToolTip": "C#_project_unicom_tic\\formes\\Form1.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAIA6wEEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T06:49:59.682Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "login_form_.cs",
               "DocumentMoniker": "C:\\Users\\UT010025\\Desktop\\clone\\C--project-UT010025\\C#_project_unicom_tic\\formes\\login_form_.cs",
               "RelativeDocumentMoniker": "C#_project_unicom_tic\\formes\\login_form_.cs",
               "ToolTip": "C:\\Users\\UT010025\\Desktop\\clone\\C--project-UT010025\\C#_project_unicom_tic\\formes\\login_form_.cs",
               "RelativeToolTip": "C#_project_unicom_tic\\formes\\login_form_.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "ViewState": "AQIAABcAAAAAAAAAAAD4vycAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T07:11:29.272Z",
+              "WhenOpened": "2025-06-12T10:26:42.182Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "buttion_Form.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\UT010025\\Desktop\\clone\\C--project-UT010025\\C#_project_unicom_tic\\formes\\buttion_Form.cs",
+              "RelativeDocumentMoniker": "C#_project_unicom_tic\\formes\\buttion_Form.cs",
+              "ToolTip": "C:\\Users\\UT010025\\Desktop\\clone\\C--project-UT010025\\C#_project_unicom_tic\\formes\\buttion_Form.cs [Design]",
+              "RelativeToolTip": "C#_project_unicom_tic\\formes\\buttion_Form.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T08:45:24.708Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "login_form_.cs [Design]",
               "DocumentMoniker": "C:\\Users\\UT010025\\Desktop\\clone\\C--project-UT010025\\C#_project_unicom_tic\\formes\\login_form_.cs",
               "RelativeDocumentMoniker": "C#_project_unicom_tic\\formes\\login_form_.cs",
@@ -55,20 +85,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\UT010025\\Desktop\\clone\\C--project-UT010025\\C#_project_unicom_tic\\formes\\Form1.cs",
-              "RelativeDocumentMoniker": "C#_project_unicom_tic\\formes\\Form1.cs",
-              "ToolTip": "C:\\Users\\UT010025\\Desktop\\clone\\C--project-UT010025\\C#_project_unicom_tic\\formes\\Form1.cs",
-              "RelativeToolTip": "C#_project_unicom_tic\\formes\\Form1.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAiwBQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T06:49:59.682Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\UT010025\\Desktop\\clone\\C--project-UT010025\\C#_project_unicom_tic\\formes\\Form1.cs",
               "RelativeDocumentMoniker": "C#_project_unicom_tic\\formes\\Form1.cs",

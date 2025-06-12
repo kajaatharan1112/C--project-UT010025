@@ -57,6 +57,12 @@
     <Compile Include="controlar\teacher_controlar.cs" />
     <Compile Include="data\DB_connection.cs" />
     <Compile Include="data\DB_tables_.cs" />
+    <Compile Include="formes\buttion_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formes\buttion_Form.Designer.cs">
+      <DependentUpon>buttion_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="formes\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="system\system.cs" />
+    <EmbeddedResource Include="formes\buttion_Form.resx">
+      <DependentUpon>buttion_Form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formes\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

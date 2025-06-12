@@ -15,9 +15,27 @@ namespace C__project_unicom_tic.formes
         public login_form_()
         {
             InitializeComponent();
+            
+           
+        }
+        
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }

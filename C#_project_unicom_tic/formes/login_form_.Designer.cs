@@ -43,7 +43,7 @@
             // 
             this.pictureBox1.ImageLocation = "C:\\Users\\UT010025\\Desktop\\clone\\C--project-UT010025\\C#_project_unicom_tic\\image_f" +
     "older\\long logo.png";
-            this.pictureBox1.Location = new System.Drawing.Point(1, -1);
+            this.pictureBox1.Location = new System.Drawing.Point(97, 55);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(600, 329);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -53,17 +53,18 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(223, 346);
+            this.textBox1.Location = new System.Drawing.Point(223, 440);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(200, 20);
             this.textBox1.TabIndex = 1;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(223, 395);
+            this.textBox2.Location = new System.Drawing.Point(223, 486);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(200, 20);
             this.textBox2.TabIndex = 2;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // button1
             // 
@@ -71,18 +72,19 @@
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button1.Cursor = System.Windows.Forms.Cursors.AppStarting;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(313, 441);
+            this.button1.Location = new System.Drawing.Point(498, 453);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(101, 32);
+            this.button1.Size = new System.Drawing.Size(101, 33);
             this.button1.TabIndex = 3;
             this.button1.Text = "Login";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // User_name
             // 
             this.User_name.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.User_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.User_name.Location = new System.Drawing.Point(106, 346);
+            this.User_name.Location = new System.Drawing.Point(107, 438);
             this.User_name.Name = "User_name";
             this.User_name.Size = new System.Drawing.Size(111, 20);
             this.User_name.TabIndex = 4;
@@ -93,7 +95,7 @@
             // 
             this.Password.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Password.Location = new System.Drawing.Point(109, 395);
+            this.Password.Location = new System.Drawing.Point(106, 484);
             this.Password.Name = "Password";
             this.Password.Size = new System.Drawing.Size(108, 20);
             this.Password.TabIndex = 5;
@@ -103,15 +105,16 @@
             // label3
             // 
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label3.Location = new System.Drawing.Point(220, 369);
+            this.label3.Location = new System.Drawing.Point(220, 463);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(203, 20);
             this.label3.TabIndex = 6;
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label4.Location = new System.Drawing.Point(223, 418);
+            this.label4.Location = new System.Drawing.Point(220, 509);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(200, 20);
             this.label4.TabIndex = 7;

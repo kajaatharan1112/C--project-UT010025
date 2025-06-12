@@ -39,3 +39,4 @@ C:\Users\UT010025\Desktop\clone\C--project-UT010025\C#_project_unicom_tic\obj\De
 C:\Users\UT010025\Desktop\clone\C--project-UT010025\C#_project_unicom_tic\obj\Debug\C#_project_unicom_tic.exe
 C:\Users\UT010025\Desktop\clone\C--project-UT010025\C#_project_unicom_tic\obj\Debug\C#_project_unicom_tic.pdb
 C:\Users\UT010025\Desktop\clone\C--project-UT010025\C#_project_unicom_tic\obj\Debug\C__project_unicom_tic.formes.login_form_.resources
+C:\Users\UT010025\Desktop\clone\C--project-UT010025\C#_project_unicom_tic\obj\Debug\C__project_unicom_tic.formes.buttion_Form.resources
