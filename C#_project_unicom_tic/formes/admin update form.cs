@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace C__project_unicom_tic.formes
 {
-    public partial class buttion_Form : Form
+    public partial class admin_update_form : Form
     {
-        public buttion_Form()
+       
+        public admin_update_form()
         {
             InitializeComponent();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

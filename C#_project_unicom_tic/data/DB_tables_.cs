@@ -80,6 +80,7 @@ namespace C__project_unicom_tic.data
                         Course_Id INTEGER NOT NULL,
                         Time_Lap_Id INTEGER NOT NULL,
                         Class_Id INTEGER NOT NULL,
+                        Status TEXT NOT NULL,
                         FOREIGN KEY (Course_Id) REFERENCES Course_table(Id),
                         FOREIGN KEY (Teacher_Id) REFERENCES Teacher_table(Id),
                         FOREIGN KEY (Class_Id) REFERENCES Class_table(Id),

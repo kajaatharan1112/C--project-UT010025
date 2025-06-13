@@ -57,23 +57,17 @@
     <Compile Include="controlar\teacher_controlar.cs" />
     <Compile Include="data\DB_connection.cs" />
     <Compile Include="data\DB_tables_.cs" />
-    <Compile Include="formes\buttion_Form.cs">
+    <Compile Include="formes\admin update form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formes\buttion_Form.Designer.cs">
-      <DependentUpon>buttion_Form.cs</DependentUpon>
+    <Compile Include="formes\admin update form.Designer.cs">
+      <DependentUpon>admin update form.cs</DependentUpon>
     </Compile>
     <Compile Include="formes\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="formes\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="formes\login_form_.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="formes\login_form_.Designer.cs">
-      <DependentUpon>login_form_.cs</DependentUpon>
     </Compile>
     <Compile Include="modals\admin_modal.cs" />
     <Compile Include="modals\class_modal.cs" />
@@ -92,14 +86,11 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="system\system.cs" />
-    <EmbeddedResource Include="formes\buttion_Form.resx">
-      <DependentUpon>buttion_Form.cs</DependentUpon>
+    <EmbeddedResource Include="formes\admin update form.resx">
+      <DependentUpon>admin update form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formes\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="formes\login_form_.resx">
-      <DependentUpon>login_form_.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
