@@ -31,16 +31,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.User_name = new System.Windows.Forms.Label();
-            this.Password = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
+            this.button15 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
@@ -54,12 +45,21 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Password = new System.Windows.Forms.Label();
+            this.User_name = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -106,112 +106,22 @@
             this.panel3.TabIndex = 2;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
-            // panel4
+            // button15
             // 
-            this.panel4.Controls.Add(this.label2);
-            this.panel4.Controls.Add(this.button2);
-            this.panel4.Controls.Add(this.label1);
-            this.panel4.Controls.Add(this.label3);
-            this.panel4.Controls.Add(this.textBox2);
-            this.panel4.Controls.Add(this.textBox1);
-            this.panel4.Controls.Add(this.Password);
-            this.panel4.Controls.Add(this.User_name);
-            this.panel4.Controls.Add(this.pictureBox2);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(200, 30);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(800, 700);
-            this.panel4.TabIndex = 3;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint_1);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.ImageLocation = "C:\\Users\\UT010025\\Desktop\\clone\\C--project-UT010025\\C#_project_unicom_tic\\image_f" +
-    "older\\long logo.png";
-            this.pictureBox2.Location = new System.Drawing.Point(2, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(600, 400);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
-            // User_name
-            // 
-            this.User_name.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.User_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.User_name.Location = new System.Drawing.Point(6, 406);
-            this.User_name.Name = "User_name";
-            this.User_name.Size = new System.Drawing.Size(111, 20);
-            this.User_name.TabIndex = 5;
-            this.User_name.Text = "User_name -";
-            this.User_name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.User_name.Click += new System.EventHandler(this.User_name_Click);
-            // 
-            // Password
-            // 
-            this.Password.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Password.Location = new System.Drawing.Point(9, 477);
-            this.Password.Name = "Password";
-            this.Password.Size = new System.Drawing.Size(108, 20);
-            this.Password.TabIndex = 6;
-            this.Password.Text = "password -";
-            this.Password.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(123, 408);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(180, 20);
-            this.textBox1.TabIndex = 7;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(123, 479);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(180, 20);
-            this.textBox2.TabIndex = 8;
-            // 
-            // label3
-            // 
-            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label3.Location = new System.Drawing.Point(296, 497);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(203, 20);
-            this.label3.TabIndex = 9;
-            // 
-            // label1
-            // 
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Location = new System.Drawing.Point(120, 502);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(179, 20);
-            this.label1.TabIndex = 10;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(339, 431);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(115, 41);
-            this.button2.TabIndex = 11;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
-            // 
-            // label2
-            // 
-            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label2.Location = new System.Drawing.Point(126, 431);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(177, 24);
-            this.label2.TabIndex = 12;
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.button15.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button15.Location = new System.Drawing.Point(15, 605);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(176, 26);
+            this.button15.TabIndex = 26;
+            this.button15.Text = "admin";
+            this.button15.UseVisualStyleBackColor = false;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.ImageLocation = "C:\\Users\\UT010025\\Desktop\\clone\\C--project-UT010025\\C#_project_unicom_tic\\image_f" +
-    "older\\box logo.jpg";
+            this.pictureBox1.ImageLocation = "C:\\Users\\UT010025\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\im" +
+    "age_folder\\box logo.jpg";
             this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(194, 202);
@@ -350,17 +260,107 @@
             this.button14.Text = "button14";
             this.button14.UseVisualStyleBackColor = false;
             // 
-            // button15
+            // panel4
             // 
-            this.button15.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button15.Location = new System.Drawing.Point(15, 605);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(176, 26);
-            this.button15.TabIndex = 26;
-            this.button15.Text = "admin";
-            this.button15.UseVisualStyleBackColor = false;
-            this.button15.Click += new System.EventHandler(this.button15_Click);
+            this.panel4.Controls.Add(this.label2);
+            this.panel4.Controls.Add(this.button2);
+            this.panel4.Controls.Add(this.label1);
+            this.panel4.Controls.Add(this.label3);
+            this.panel4.Controls.Add(this.textBox2);
+            this.panel4.Controls.Add(this.textBox1);
+            this.panel4.Controls.Add(this.Password);
+            this.panel4.Controls.Add(this.User_name);
+            this.panel4.Controls.Add(this.pictureBox2);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(200, 30);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(800, 700);
+            this.panel4.TabIndex = 3;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint_1);
+            // 
+            // label2
+            // 
+            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label2.Location = new System.Drawing.Point(126, 431);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(177, 24);
+            this.label2.TabIndex = 12;
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(339, 431);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(115, 41);
+            this.button2.TabIndex = 11;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
+            // label1
+            // 
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label1.Location = new System.Drawing.Point(120, 502);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(179, 20);
+            this.label1.TabIndex = 10;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label3
+            // 
+            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label3.Location = new System.Drawing.Point(296, 497);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(203, 20);
+            this.label3.TabIndex = 9;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(123, 479);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(180, 20);
+            this.textBox2.TabIndex = 8;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(123, 408);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(180, 20);
+            this.textBox1.TabIndex = 7;
+            // 
+            // Password
+            // 
+            this.Password.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Password.Location = new System.Drawing.Point(9, 477);
+            this.Password.Name = "Password";
+            this.Password.Size = new System.Drawing.Size(108, 20);
+            this.Password.TabIndex = 6;
+            this.Password.Text = "password -";
+            this.Password.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // User_name
+            // 
+            this.User_name.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.User_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.User_name.Location = new System.Drawing.Point(6, 406);
+            this.User_name.Name = "User_name";
+            this.User_name.Size = new System.Drawing.Size(111, 20);
+            this.User_name.TabIndex = 5;
+            this.User_name.Text = "User_name -";
+            this.User_name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.User_name.Click += new System.EventHandler(this.User_name_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.ImageLocation = "C:\\Users\\UT010025\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\im" +
+    "age_folder\\long logo.png";
+            this.pictureBox2.Location = new System.Drawing.Point(2, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(600, 400);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
             // 
             // Form1
             // 
@@ -376,10 +376,10 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
