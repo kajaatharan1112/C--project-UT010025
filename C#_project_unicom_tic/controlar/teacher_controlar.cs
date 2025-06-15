@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace C__project_unicom_tic.controlar
 {
-    internal class teacher_controlar
+    internal class teacher_controlar:student_controlar
     {
+
     }
 }

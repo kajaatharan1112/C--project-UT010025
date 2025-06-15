@@ -161,5 +161,10 @@ namespace C__project_unicom_tic
             
             
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

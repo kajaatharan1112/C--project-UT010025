@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace C__project_unicom_tic.system
+namespace C__project_unicom_tic.controlar
 {
-    internal class system
+    internal class user_controlar_
     {
-
     }
 }

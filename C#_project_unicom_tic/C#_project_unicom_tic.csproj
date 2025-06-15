@@ -55,6 +55,7 @@
     <Compile Include="controlar\staf_controlar.cs" />
     <Compile Include="controlar\student_controlar.cs" />
     <Compile Include="controlar\teacher_controlar.cs" />
+    <Compile Include="controlar\user_controlar_.cs" />
     <Compile Include="data\DB_connection.cs" />
     <Compile Include="data\DB_tables_.cs" />
     <Compile Include="formes\admin update form.cs">
@@ -85,7 +86,6 @@
     <Compile Include="modals\user_modal.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="system\system.cs" />
     <EmbeddedResource Include="formes\admin update form.resx">
       <DependentUpon>admin update form.cs</DependentUpon>
     </EmbeddedResource>

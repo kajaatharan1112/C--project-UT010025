@@ -42,6 +42,10 @@
             this.NIC_number = new System.Windows.Forms.Label();
             this.textBox_nic_number = new System.Windows.Forms.TextBox();
             this.label_nic_number = new System.Windows.Forms.Label();
+            this.label_show = new System.Windows.Forms.Label();
+            this.label_user_name = new System.Windows.Forms.Label();
+            this.textBox_user_name = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -95,7 +99,7 @@
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(25, 151);
+            this.label1.Location = new System.Drawing.Point(25, 90);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(100, 23);
             this.label1.TabIndex = 5;
@@ -104,7 +108,7 @@
             // 
             // textBox_name
             // 
-            this.textBox_name.Location = new System.Drawing.Point(131, 154);
+            this.textBox_name.Location = new System.Drawing.Point(131, 93);
             this.textBox_name.Name = "textBox_name";
             this.textBox_name.Size = new System.Drawing.Size(216, 20);
             this.textBox_name.TabIndex = 6;
@@ -112,7 +116,7 @@
             // 
             // label_name
             // 
-            this.label_name.Location = new System.Drawing.Point(128, 177);
+            this.label_name.Location = new System.Drawing.Point(128, 116);
             this.label_name.Name = "label_name";
             this.label_name.Size = new System.Drawing.Size(219, 23);
             this.label_name.TabIndex = 7;
@@ -120,7 +124,7 @@
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(25, 200);
+            this.label3.Location = new System.Drawing.Point(25, 139);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(100, 23);
             this.label3.TabIndex = 8;
@@ -129,14 +133,15 @@
             // 
             // textBox_Address
             // 
-            this.textBox_Address.Location = new System.Drawing.Point(131, 200);
+            this.textBox_Address.Location = new System.Drawing.Point(131, 139);
             this.textBox_Address.Name = "textBox_Address";
             this.textBox_Address.Size = new System.Drawing.Size(216, 20);
             this.textBox_Address.TabIndex = 9;
+            this.textBox_Address.TextChanged += new System.EventHandler(this.textBox_Address_TextChanged);
             // 
             // label_address
             // 
-            this.label_address.Location = new System.Drawing.Point(128, 223);
+            this.label_address.Location = new System.Drawing.Point(128, 162);
             this.label_address.Name = "label_address";
             this.label_address.Size = new System.Drawing.Size(219, 23);
             this.label_address.TabIndex = 10;
@@ -144,7 +149,7 @@
             // 
             // NIC_number
             // 
-            this.NIC_number.Location = new System.Drawing.Point(25, 246);
+            this.NIC_number.Location = new System.Drawing.Point(25, 185);
             this.NIC_number.Name = "NIC_number";
             this.NIC_number.Size = new System.Drawing.Size(100, 23);
             this.NIC_number.TabIndex = 11;
@@ -153,24 +158,62 @@
             // 
             // textBox_nic_number
             // 
-            this.textBox_nic_number.Location = new System.Drawing.Point(131, 249);
+            this.textBox_nic_number.Location = new System.Drawing.Point(131, 188);
             this.textBox_nic_number.Name = "textBox_nic_number";
             this.textBox_nic_number.Size = new System.Drawing.Size(216, 20);
             this.textBox_nic_number.TabIndex = 12;
+            this.textBox_nic_number.TextChanged += new System.EventHandler(this.textBox_nic_number_TextChanged);
             // 
             // label_nic_number
             // 
-            this.label_nic_number.Location = new System.Drawing.Point(128, 272);
+            this.label_nic_number.Location = new System.Drawing.Point(128, 211);
             this.label_nic_number.Name = "label_nic_number";
             this.label_nic_number.Size = new System.Drawing.Size(219, 23);
             this.label_nic_number.TabIndex = 13;
             this.label_nic_number.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label_show
+            // 
+            this.label_show.Location = new System.Drawing.Point(115, 243);
+            this.label_show.Name = "label_show";
+            this.label_show.Size = new System.Drawing.Size(232, 76);
+            this.label_show.TabIndex = 14;
+            this.label_show.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label_user_name
+            // 
+            this.label_user_name.Location = new System.Drawing.Point(134, 328);
+            this.label_user_name.Name = "label_user_name";
+            this.label_user_name.Size = new System.Drawing.Size(219, 23);
+            this.label_user_name.TabIndex = 17;
+            this.label_user_name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBox_user_name
+            // 
+            this.textBox_user_name.Location = new System.Drawing.Point(137, 305);
+            this.textBox_user_name.Name = "textBox_user_name";
+            this.textBox_user_name.Size = new System.Drawing.Size(216, 20);
+            this.textBox_user_name.TabIndex = 16;
+            // 
+            // label4
+            // 
+            this.label4.Location = new System.Drawing.Point(31, 302);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(100, 23);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "User_Name";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // admin_update_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 700);
+            this.Controls.Add(this.label_user_name);
+            this.Controls.Add(this.textBox_user_name);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label_show);
             this.Controls.Add(this.label_nic_number);
             this.Controls.Add(this.textBox_nic_number);
             this.Controls.Add(this.NIC_number);
@@ -210,5 +253,9 @@
         private System.Windows.Forms.Label NIC_number;
         private System.Windows.Forms.TextBox textBox_nic_number;
         private System.Windows.Forms.Label label_nic_number;
+        private System.Windows.Forms.Label label_show;
+        private System.Windows.Forms.Label label_user_name;
+        private System.Windows.Forms.TextBox textBox_user_name;
+        private System.Windows.Forms.Label label4;
     }
 }

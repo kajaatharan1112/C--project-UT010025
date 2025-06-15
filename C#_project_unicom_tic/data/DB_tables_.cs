@@ -13,8 +13,8 @@ namespace C__project_unicom_tic.data
         {
             using (var connection = DB_connection.Get_Connection())
             {
-                string command = @"
-                  CREATE TABLE IF NOT EXISTS Admin_table (         
+                string command = @"-- Table creation
+                    CREATE TABLE IF NOT EXISTS Admin_table (         
                         Id INTEGER PRIMARY KEY AUTOINCREMENT,
                         Name TEXT NOT NULL,
                         Nic_number INTEGER NOT NULL,
@@ -142,6 +142,16 @@ namespace C__project_unicom_tic.data
                         PRIMARY KEY (Date, Staff_Id),
                         FOREIGN KEY (Staff_Id) REFERENCES Staff_table(Id)
                     );
+
+                    -- Set AUTOINCREMENT starting values
+                    INSERT OR REPLACE INTO sqlite_sequence (name, seq) VALUES ('Admin_table', 99999);
+                    INSERT OR REPLACE INTO sqlite_sequence (name, seq) VALUES ('Course_table', 100050);
+                    INSERT OR REPLACE INTO sqlite_sequence (name, seq) VALUES ('Teacher_table', 249999);
+                    INSERT OR REPLACE INTO sqlite_sequence (name, seq) VALUES ('Staff_table', 104999);
+                    INSERT OR REPLACE INTO sqlite_sequence (name, seq) VALUES ('Time_table', 10000000);
+                    INSERT OR REPLACE INTO sqlite_sequence (name, seq) VALUES ('Student_table', 599999);
+                    INSERT OR REPLACE INTO sqlite_sequence (name, seq) VALUES ('Exam_table', 1000);
+
 
 
                     ";
