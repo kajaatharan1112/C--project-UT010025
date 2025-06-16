@@ -13,6 +13,7 @@ namespace C__project_unicom_tic.modals
         public string Name { get; set; }
         public int Teacher_Id { get; set; }
         public int Corse_Id {  get; set; }
+        public string Status {  get; set; }
 
         
     }

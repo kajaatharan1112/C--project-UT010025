@@ -103,6 +103,7 @@ namespace C__project_unicom_tic.data
                         Name TEXT NOT NULL,
                         Teacher_Id INTEGER NOT NULL,
                         Course_Id INTEGER NOT NULL,
+                        Status TEXT NOT NULL,
                         FOREIGN KEY (Course_Id) REFERENCES Course_table(Id),
                         FOREIGN KEY (Teacher_Id) REFERENCES Teacher_table(Id),
                         CHECK (Id > 1000 AND Id < 9999)

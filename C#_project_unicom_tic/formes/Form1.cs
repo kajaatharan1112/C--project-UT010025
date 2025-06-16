@@ -1,5 +1,7 @@
 ﻿//using C__project_unicom_tic.formes;
+using C__project_unicom_tic.controlar;
 using C__project_unicom_tic.formes;
+using C__project_unicom_tic.modals;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,10 +17,15 @@ namespace C__project_unicom_tic
 {
     public partial class Form1 : Form
     {
+        user_controlar_ User_Controlar_;
+
         public int user_id = 000001;
         public string Date = DateTime.Now.ToString("yyyy-MM-dd");
+        public int ROOL_ID;
         public Form1()
         {
+            User_Controlar_ = new user_controlar_();    
+
             InitializeComponent();
             /*buttion_Form data= new buttion_Form();
             LoadForm_2(data); */
@@ -109,33 +116,62 @@ namespace C__project_unicom_tic
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            
-            //--------------------------------
-            textBox1.Visible = false;
-            textBox2.Visible = false;
-            label1.Visible = false;
-            label2.Visible = false;
-            button2.Visible = false;
-            User_name.Visible = false;
-            Password.Visible = false;
-            pictureBox2.Visible = false;
-            //--------------------------------
-            pictureBox1.Visible = true;
-            button3.Visible = true;
-            button4.Visible = true;
-            button5.Visible = true;
-            button6.Visible = true;
-            button7.Visible = true;
-            button8.Visible = true;
-            button9.Visible = true;
-            button10.Visible = true;
-            button11.Visible = true;
-            button12.Visible = true;
-            button13.Visible = true;
-            button14.Visible = true;
-            button15.Visible = true;
-            //------------------------------
+           
+
+            List<user_modal>data= new List<user_modal>();
+            data = User_Controlar_.show_user_Output();
+            foreach (user_modal item in data)
+            {
+                if (item.Name == textBox1.Text && item.Password == textBox2.Text)
+                {
+                    int rool_id=item.User_id;
+                    ROOL_ID = rool_id;
+
+
+                    if (rool_id >=100000 && rool_id<=100050)
+                    {
+                        //--------------------------------
+                        textBox1.Visible = false;
+                        textBox2.Visible = false;
+                        label1.Visible = false;
+                        label2.Visible = false;
+                        button2.Visible = false;
+                        User_name.Visible = false;
+                        Password.Visible = false;
+                        pictureBox2.Visible = false;
+                        //--------------------------------
+                        pictureBox1.Visible = true;
+                        button3.Visible = true;
+                        button4.Visible = true;
+                        button5.Visible = true;
+                        button6.Visible = true;
+                        button7.Visible = true;
+                        button8.Visible = true;
+                        button9.Visible = true;
+                        button10.Visible = true;
+                        button11.Visible = true;
+                        button12.Visible = true;
+                        button13.Visible = true;
+                        button14.Visible = true;
+                        button15.Visible = true;
+                        //------------------------------
+                    }
+
+
+
+
+
+
+
+                }
+                else
+                {
+                    label1.Text = "invalide input";
+                }
+            }
+           
         }
+        
 
         private void panel4_Paint_1(object sender, PaintEventArgs e)
         {
@@ -165,6 +201,16 @@ namespace C__project_unicom_tic
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            textBox1.Text=textBox1.Text.Trim();
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            textBox2.Text = textBox2.Text.Trim();
         }
     }
 }

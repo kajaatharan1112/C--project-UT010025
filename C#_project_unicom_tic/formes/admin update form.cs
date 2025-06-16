@@ -16,10 +16,12 @@ namespace C__project_unicom_tic.formes
     public partial class admin_update_form : Form
     {
         private admin_controlar Admin_controlar;
+        private user_controlar_ User_Controlar_;
        
         public admin_update_form()
         {
             Admin_controlar = new admin_controlar();
+            User_Controlar_=new user_controlar_();
             InitializeComponent();
             viw();
 
@@ -57,33 +59,43 @@ namespace C__project_unicom_tic.formes
 
         private void button1_Click(object sender, EventArgs e)
         {
-           admin_modal data=new admin_modal();
-            data.Name=textBox_name.Text;
-            data.Nic_number=Convert.ToInt32(textBox_nic_number.Text);
-            data.Address=textBox_Address.Text;
+            if (!string.IsNullOrWhiteSpace(textBox_name.Text) &&
+                !string.IsNullOrWhiteSpace(textBox_Address.Text) &&
+                !string.IsNullOrWhiteSpace(textBox_nic_number.Text))
+                        {
+                try
+                {
+                    admin_modal data = new admin_modal();
+                    data.Name = textBox_name.Text;
+                    data.Nic_number = Convert.ToInt32(textBox_nic_number.Text);
+                    data.Address = textBox_Address.Text;
 
-            Admin_controlar.add_admin(data);
+                    Admin_controlar.add_admin(data);
 
-            List<admin_modal> data1 = Admin_controlar.show_admin_Output();
-            admin_modal modal = new admin_modal();
-            modal = data1[data1.Count-1];
-            label_show.Text = Convert.ToString(modal.Id);
+                    List<admin_modal> data1 = Admin_controlar.show_admin_Output();
+                    if (data1.Count > 0)
+                    {
+                        admin_modal modal = data1[data1.Count - 1];
+                        label_show.Text = modal.Id.ToString();
+                    }
 
-            label4.Visible = true;
-            textBox_user_name.Visible = true;
-            label_user_name.Visible = true;
+                    label4.Visible = true;
+                    textBox_user_name.Visible = true;
+                    label_user_name.Visible = true;
 
-
-            viw();
-
-            
-
-           
-           
-
-
-
-
+                    viw();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+            }
+            else
+            {
+               //label2.Visible = true;
+                label2.Text = "Complete all details.";
+                label2.ForeColor = Color.Red;
+            }
 
         }
 
@@ -115,6 +127,29 @@ namespace C__project_unicom_tic.formes
         private void textBox_Address_TextChanged(object sender, EventArgs e)
         {
             textBox_Address.Text=textBox_Address.Text.Trim();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            user_modal data3= new user_modal();
+            data3.User_id = Convert.ToInt32(label_show.Text);
+            data3.Name=textBox_user_name.Text;
+            data3.Password = "Admin@123";
+            User_Controlar_.add_user(data3);
+
+
+            textBox_user_name.Text = "";
+
+        }
+
+        private void textBox_user_name_TextChanged(object sender, EventArgs e)
+        {
+            textBox_user_name.Text=textBox_user_name.Text.Trim();
         }
     }
 }

@@ -46,6 +46,8 @@
             this.label_user_name = new System.Windows.Forms.Label();
             this.textBox_user_name = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,7 +55,7 @@
             // 
             this.dataGridView1.AllowUserToOrderColumns = true;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(370, 88);
+            this.dataGridView1.Location = new System.Drawing.Point(379, 67);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(418, 373);
             this.dataGridView1.TabIndex = 0;
@@ -194,6 +196,7 @@
             this.textBox_user_name.Name = "textBox_user_name";
             this.textBox_user_name.Size = new System.Drawing.Size(216, 20);
             this.textBox_user_name.TabIndex = 16;
+            this.textBox_user_name.TextChanged += new System.EventHandler(this.textBox_user_name_TextChanged);
             // 
             // label4
             // 
@@ -205,11 +208,32 @@
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(131, 67);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(219, 23);
+            this.label2.TabIndex = 18;
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(278, 354);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "ADD";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // admin_update_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 700);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label_user_name);
             this.Controls.Add(this.textBox_user_name);
             this.Controls.Add(this.label4);
@@ -257,5 +281,7 @@
         private System.Windows.Forms.Label label_user_name;
         private System.Windows.Forms.TextBox textBox_user_name;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button1;
     }
 }
