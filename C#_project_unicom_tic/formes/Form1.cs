@@ -21,7 +21,7 @@ namespace C__project_unicom_tic
 
         public int user_id = 000001;
         public string Date = DateTime.Now.ToString("yyyy-MM-dd");
-        public int ROOL_ID;
+        public int ROOL_ID = 0;
         public Form1()
         {
             User_Controlar_ = new user_controlar_();    
@@ -125,7 +125,10 @@ namespace C__project_unicom_tic
                 if (item.Name == textBox1.Text && item.Password == textBox2.Text)
                 {
                     int rool_id=item.User_id;
+                    label4.Text= Convert.ToString(rool_id);
                     ROOL_ID = rool_id;
+                    //MessageBox.Show(Convert.ToString(ROOL_ID), "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
 
 
                     if (rool_id >=100000 && rool_id<=100050)
@@ -171,7 +174,7 @@ namespace C__project_unicom_tic
             }
            
         }
-        
+       
 
         private void panel4_Paint_1(object sender, PaintEventArgs e)
         {
@@ -190,7 +193,7 @@ namespace C__project_unicom_tic
 
         private void button15_Click(object sender, EventArgs e)
         {
-            admin_update_form data = new admin_update_form();
+            admin_update_form data = new admin_update_form(ROOL_ID);
             LoadForm_1(data);
             
 
@@ -211,6 +214,11 @@ namespace C__project_unicom_tic
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
             textBox2.Text = textBox2.Text.Trim();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            label4.Text = label4.Text.Trim();
         }
     }
 }

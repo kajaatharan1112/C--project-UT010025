@@ -58,6 +58,21 @@ namespace C__project_unicom_tic.controlar
             return data;
         }
 
+        public void delete_user_(int user_id_num)
+        {
+            using (var connection = DB_connection.Get_Connection())
+            {
+                string query = @"DELETE FROM User_table WHERE User_id = @UserId;";
+
+                using (SQLiteCommand cmd = new SQLiteCommand(query, connection))
+                {
+                    cmd.Parameters.AddWithValue("@UserId", user_id_num);
+                    int rowsAffected = cmd.ExecuteNonQuery();
+                }
+            }
+        }
+
+
     }
 }
 

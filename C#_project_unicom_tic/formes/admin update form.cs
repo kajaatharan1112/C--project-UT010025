@@ -7,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Net;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -17,9 +18,13 @@ namespace C__project_unicom_tic.formes
     {
         private admin_controlar Admin_controlar;
         private user_controlar_ User_Controlar_;
+        public int id;
        
-        public admin_update_form()
+        public admin_update_form(int dd)
         {
+            
+            id = dd;
+
             Admin_controlar = new admin_controlar();
             User_Controlar_=new user_controlar_();
             InitializeComponent();
@@ -44,12 +49,40 @@ namespace C__project_unicom_tic.formes
             List<admin_modal> data1 = Admin_controlar.show_admin_Output();
             dataGridView1.DataSource = data1;
             dataGridView1.ClearSelection();
+            dataGridView1.Columns["Id"].Visible = false;
             clear();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
+            DialogResult result = MessageBox.Show(
+                "Are you sure you want to delete?",
+                "Confirm Delete",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+                );
+
+            if (result == DialogResult.Yes)
+            {
+                /*Form1 form = new Form1();
+                int id = form.rool();*/
+
+                label_show.Text = Convert.ToString(id);
+                Admin_controlar.delete_admin_(id);
+                User_Controlar_.delete_user_(id);
+                viw();
+                MessageBox.Show("bye bye");
+                Application.Exit();
+            }
+            else
+            {
+               viw();
+                MessageBox.Show("Delete operation cancelled.");
+            }
+
             
+
+
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -150,6 +183,28 @@ namespace C__project_unicom_tic.formes
         private void textBox_user_name_TextChanged(object sender, EventArgs e)
         {
             textBox_user_name.Text=textBox_user_name.Text.Trim();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
+                int admin_Id = Convert.ToInt32(row.Cells["Id"].Value);
+                admin_modal admin_data = Admin_controlar.show_admin_(admin_Id);
+
+                if (admin_data != null && admin_data.Id != 0)
+                {
+                    textBox_name.Text = admin_data.Name;
+                    textBox_nic_number.Text=Convert .ToString(admin_data.Nic_number);
+                    textBox_Address.Text = admin_data.Address;
+                }
+                else
+                {
+                    MessageBox.Show("Admin not found.");
+                }
+            }
+
         }
     }
 }

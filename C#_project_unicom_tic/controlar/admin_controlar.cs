@@ -68,5 +68,56 @@ namespace C__project_unicom_tic.controlar
             return data;
 
         }
+
+
+
+         public admin_modal show_admin_(int admin_id_num)
+        {
+            using (var connection = DB_connection.Get_Connection())
+            {
+                string query = @"SELECT * FROM Admin_table WHERE Id = @Id;";
+
+                using (SQLiteCommand cmd = new SQLiteCommand(query, connection))
+                {
+                    cmd.Parameters.AddWithValue("@Id", admin_id_num);
+
+                    using (SQLiteDataReader reader = cmd.ExecuteReader())
+                    {
+                       if (reader.Read())
+                        {
+                            return new admin_modal
+                            {
+                                Id = reader.GetInt32(0),
+                                Name = reader.GetString(1),
+                                Nic_number = reader.GetInt32(2),
+                                Address = reader.GetString(3)
+                            };
+                        }
+                    }
+                }
+            }
+            return new admin_modal
+            {
+                Id = 0,
+                Name = "Not Found",
+                Nic_number = 0,
+                Address = "Not Found"
+            };
+         }
+
+        public void delete_admin_(int admin_id_num)
+        {
+            using (var connection = DB_connection.Get_Connection())
+            {
+                string query = @"DELETE FROM Admin_table WHERE Id = @Id;";
+                using (SQLiteCommand cmd = new SQLiteCommand(query, connection))
+                {
+                    cmd.Parameters.AddWithValue("@Id", admin_id_num);
+                    int rowsAffected = cmd.ExecuteNonQuery(); 
+                }
+            }
+        }
+
+
     }
- }
+}
