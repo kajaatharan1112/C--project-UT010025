@@ -118,6 +118,34 @@ namespace C__project_unicom_tic.controlar
             }
         }
 
+        public void update_admin(admin_modal admin)
+        {
+            using (var connection = DB_connection.Get_Connection())
+            {
+                string query = @"UPDATE Admin_table 
+                         SET Name = @Name, 
+                             Nic_number = @Nic_number, 
+                             Address = @Address 
+                         WHERE Id = @Id AND Id BETWEEN 100000 AND 100050;";
+                using (SQLiteCommand cmd = new SQLiteCommand(query, connection))
+                {
+                    cmd.Parameters.AddWithValue("@Name", admin.Name);
+                    cmd.Parameters.AddWithValue("@Nic_number", admin.Nic_number);
+                    cmd.Parameters.AddWithValue("@Address", admin.Address);
+                    cmd.Parameters.AddWithValue("@Id", admin.Id);
+
+                    int rowsAffected = cmd.ExecuteNonQuery();
+                    if (rowsAffected > 0)
+                    {
+                        MessageBox.Show("Admin updated successfully.");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Update failed. ID may be out of valid range.");
+                    }
+                }
+            }
+        }
 
     }
 }

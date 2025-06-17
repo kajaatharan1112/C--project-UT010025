@@ -19,7 +19,8 @@ namespace C__project_unicom_tic.formes
         private admin_controlar Admin_controlar;
         private user_controlar_ User_Controlar_;
         public int id;
-       
+        public int update_id;
+
         public admin_update_form(int dd)
         {
             
@@ -34,6 +35,7 @@ namespace C__project_unicom_tic.formes
             label4.Visible = false;
             textBox_user_name.Visible = false;
             label_user_name.Visible=false;
+            button1.Visible = false;
         }
         private void clear()
         {
@@ -110,12 +112,12 @@ namespace C__project_unicom_tic.formes
                     {
                         admin_modal modal = data1[data1.Count - 1];
                         label_show.Text = modal.Id.ToString();
+                        update_id = modal.Id;
                     }
 
                     label4.Visible = true;
                     textBox_user_name.Visible = true;
                     label_user_name.Visible = true;
-
                     viw();
                 }
                 catch (Exception ex)
@@ -134,8 +136,7 @@ namespace C__project_unicom_tic.formes
 
         private void button4_Click(object sender, EventArgs e)
         {
-          /*  Form1 form = new Form1();   
-            label_name.Text=Convert.ToString(form.user_id);*/
+          
          
         }
 
@@ -148,7 +149,7 @@ namespace C__project_unicom_tic.formes
             catch (FormatException)
             {
                 label_nic_number.Text = "Input numbers only ";
-                textBox_nic_number.Text = "";
+                textBox_nic_number.Text = "0";
             }
         }
 
@@ -169,20 +170,40 @@ namespace C__project_unicom_tic.formes
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            user_modal data3= new user_modal();
-            data3.User_id = Convert.ToInt32(label_show.Text);
-            data3.Name=textBox_user_name.Text;
-            data3.Password = "Admin@123";
-            User_Controlar_.add_user(data3);
-
-
-            textBox_user_name.Text = "";
+            if(textBox_user_name.Text ==null || textBox_user_name.Text.Trim() == "")
+            {
+                label_user_name.Text = "User name is required.";
+            }
+            else
+               {
+                user_modal data3 = new user_modal
+                {
+                    User_id = update_id,
+                    Name = textBox_user_name.Text.Trim(),
+                    Password = "Admin@123"
+                };
+            }
 
         }
 
         private void textBox_user_name_TextChanged(object sender, EventArgs e)
         {
             textBox_user_name.Text=textBox_user_name.Text.Trim();
+            List<user_modal> existingUsers = User_Controlar_.show_user_Output();
+            bool nameExists = existingUsers.Any(u => u.Name.Equals(textBox_user_name.Text.Trim(), StringComparison.OrdinalIgnoreCase));
+
+            if (nameExists)
+            {
+                label_user_name.Text = "User name already exists.";
+                label_user_name.ForeColor = Color.Red;
+                button1.Visible = false; 
+            }
+            else
+            {
+                label_user_name.Text = "User name is available.";
+                label_user_name.ForeColor = Color.Green;
+                button1.Visible = true;
+            }
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -192,6 +213,7 @@ namespace C__project_unicom_tic.formes
                 DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
                 int admin_Id = Convert.ToInt32(row.Cells["Id"].Value);
                 admin_modal admin_data = Admin_controlar.show_admin_(admin_Id);
+                update_id = admin_data.Id;
 
                 if (admin_data != null && admin_data.Id != 0)
                 {
@@ -204,6 +226,40 @@ namespace C__project_unicom_tic.formes
                     MessageBox.Show("Admin not found.");
                 }
             }
+
+        }
+
+        private void button_update_Click(object sender, EventArgs e)
+        {
+            admin_modal data = new admin_modal();
+            data.Id = update_id;
+            data.Name = textBox_name.Text.Trim();
+            data.Nic_number = Convert.ToInt32(textBox_nic_number.Text.Trim());
+            data.Address = textBox_Address.Text.Trim();
+
+            if (!string.IsNullOrWhiteSpace(data.Name) &&
+                !string.IsNullOrWhiteSpace(data.Address) &&
+                !string.IsNullOrWhiteSpace(textBox_nic_number.Text))
+            {
+                Admin_controlar.update_admin(data);
+                //MessageBox.Show("Admin updated successfully!");
+                viw();
+                clear();
+            }
+            else
+            {
+                label2.Text = "Complete all details.";
+                label2.ForeColor = Color.Red;
+            }
+        }
+
+        private void label_show_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label_user_name_Click(object sender, EventArgs e)
+        {
 
         }
     }
