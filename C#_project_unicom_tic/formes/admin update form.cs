@@ -34,6 +34,7 @@ namespace C__project_unicom_tic.formes
             textBox_user_name.Visible = false;
             label_user_name.Visible=false;
             button1.Visible = false;
+           
         }
         private void clear()
         {

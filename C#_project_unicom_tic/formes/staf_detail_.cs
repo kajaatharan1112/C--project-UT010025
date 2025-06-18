@@ -27,8 +27,13 @@ namespace C__project_unicom_tic.formes
             textBox_user_name.Visible=false;
             label_user_name.Visible = false;
             button1.Visible = false;
-            label4.Visible = false;    
-
+            label4.Visible = false;
+            label6.Visible = false;
+            label7.Visible = false;
+            label8.Visible = false;
+            label9.Visible = false;
+            label10.Visible = false;
+            label11.Visible = false;
         }
         private void vew()
         {
@@ -179,28 +184,37 @@ namespace C__project_unicom_tic.formes
 
         private void button_update_Click(object sender, EventArgs e)
         {
-            /*staf_modal data = new staf_modal();
+            staf_modal data = new staf_modal();
+            data.Id = update_id;
             data.Name = textBox_name.Text;
             data.Nic_number = Convert.ToInt32(textBox_nic_number.Text);
-              data.Join_date = DateTime.Now.ToString("yyyy-MM-dd");
-              data.Out_date = "countnew";
-            data.status = "Active";
-            data.Adderss = textBox_Address.Text;
+            data.Join_date = label7.Text;
+            data.Out_date = label8.Text;
+            data.status = label10.Text;
+            data.Adderss = textBox_Address.Text.Trim();
 
             if (!string.IsNullOrWhiteSpace(data.Name) &&
-                !string.IsNullOrWhiteSpace(data.Address) &&
+                !string.IsNullOrWhiteSpace(data.Adderss) &&
                 !string.IsNullOrWhiteSpace(textBox_nic_number.Text))
             {
-                Admin_controlar.update_admin(data);
+                Admin_Controlar.update_staff(data);
                 //MessageBox.Show("Admin updated successfully!");
-                viw();
+                vew();
                 clear();
             }
             else
             {
                 label_show.Text = "Complete all details.";
                 label_show.ForeColor = Color.Red;
-            }*/
+            }
+
+            label6.Visible = false;
+            label7.Visible = false;
+            label8.Visible = false;
+            label9.Visible = false;
+            label10.Visible = false;
+            label11.Visible = false;
+            clear();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -209,20 +223,41 @@ namespace C__project_unicom_tic.formes
             {
                 //taGridViewRow row = dataGridView1.Rows[e.RowIndex];
                 int staff_id_num = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["Id"].Value );
-                staf_modal admin_data = Admin_Controlar.show_staff_(staff_id_num);
-                update_id = admin_data.Id;
+                staf_modal staf_data = Admin_Controlar.show_staff_(staff_id_num);
+                update_id = staf_data.Id;
 
-                if (admin_data != null && admin_data.Id != 0)
+                if (staf_data != null && staf_data.Id != 0)
                 {
-                    textBox_name.Text = admin_data.Name;
-                    textBox_nic_number.Text = Convert.ToString(admin_data.Nic_number);
-                    textBox_Address.Text = admin_data.Adderss;
+
+                    label6.Visible = true;
+                    label7.Visible = true;
+                    label8.Visible = true;
+                    label9.Visible = true;
+                    label10.Visible = true;
+                    label11.Visible = true;
+
+                    textBox_name.Text = staf_data.Name;
+                    textBox_nic_number.Text = Convert.ToString(staf_data.Nic_number);
+                    textBox_Address.Text = staf_data.Adderss;
+                    label7.Text = staf_data.Join_date;
+                    label8.Text= staf_data.Out_date;
+                    label10.Text= staf_data.status;
                 }
                 else
                 {
                     MessageBox.Show("Admin not found.");
                 }
             }
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void staf_detail__Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

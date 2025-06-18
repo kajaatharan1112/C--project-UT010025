@@ -48,6 +48,12 @@
             this.button_update = new System.Windows.Forms.Button();
             this.button_add = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,7 +68,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(280, 334);
+            this.button1.Location = new System.Drawing.Point(280, 464);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 39;
@@ -80,7 +86,7 @@
             // 
             // label_user_name
             // 
-            this.label_user_name.Location = new System.Drawing.Point(123, 308);
+            this.label_user_name.Location = new System.Drawing.Point(123, 438);
             this.label_user_name.Name = "label_user_name";
             this.label_user_name.Size = new System.Drawing.Size(219, 23);
             this.label_user_name.TabIndex = 37;
@@ -88,7 +94,7 @@
             // 
             // textBox_user_name
             // 
-            this.textBox_user_name.Location = new System.Drawing.Point(139, 284);
+            this.textBox_user_name.Location = new System.Drawing.Point(139, 414);
             this.textBox_user_name.Name = "textBox_user_name";
             this.textBox_user_name.Size = new System.Drawing.Size(216, 20);
             this.textBox_user_name.TabIndex = 36;
@@ -96,7 +102,7 @@
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(27, 282);
+            this.label4.Location = new System.Drawing.Point(27, 412);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(100, 23);
             this.label4.TabIndex = 35;
@@ -106,7 +112,7 @@
             // 
             // label_show
             // 
-            this.label_show.Location = new System.Drawing.Point(17, 360);
+            this.label_show.Location = new System.Drawing.Point(17, 490);
             this.label_show.Name = "label_show";
             this.label_show.Size = new System.Drawing.Size(341, 167);
             this.label_show.TabIndex = 34;
@@ -227,11 +233,69 @@
             this.dataGridView1.TabIndex = 21;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
+            // label6
+            // 
+            this.label6.Location = new System.Drawing.Point(31, 278);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(100, 23);
+            this.label6.TabIndex = 41;
+            this.label6.Text = "join_date";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label7
+            // 
+            this.label7.Location = new System.Drawing.Point(136, 278);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(219, 23);
+            this.label7.TabIndex = 42;
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label7.Click += new System.EventHandler(this.label7_Click);
+            // 
+            // label8
+            // 
+            this.label8.Location = new System.Drawing.Point(136, 301);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(219, 23);
+            this.label8.TabIndex = 44;
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label9
+            // 
+            this.label9.Location = new System.Drawing.Point(31, 301);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(100, 23);
+            this.label9.TabIndex = 43;
+            this.label9.Text = "out_date";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label10
+            // 
+            this.label10.Location = new System.Drawing.Point(136, 324);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(219, 23);
+            this.label10.TabIndex = 46;
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label11
+            // 
+            this.label11.Location = new System.Drawing.Point(31, 324);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(100, 23);
+            this.label11.TabIndex = 45;
+            this.label11.Text = "Status";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // staf_detail_
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 700);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
@@ -255,6 +319,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "staf_detail_";
             this.Text = "staf_detail_";
+            this.Load += new System.EventHandler(this.staf_detail__Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -283,5 +348,11 @@
         private System.Windows.Forms.Button button_update;
         private System.Windows.Forms.Button button_add;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
     }
 }
