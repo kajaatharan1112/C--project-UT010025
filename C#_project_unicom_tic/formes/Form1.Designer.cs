@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button15 = new System.Windows.Forms.Button();
@@ -55,7 +56,6 @@
             this.Password = new System.Windows.Forms.Label();
             this.User_name = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -72,6 +72,15 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1000, 30);
             this.panel1.TabIndex = 0;
+            // 
+            // label4
+            // 
+            this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label4.Location = new System.Drawing.Point(12, 4);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(177, 24);
+            this.label4.TabIndex = 13;
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // button1
             // 
@@ -262,6 +271,7 @@
             this.button14.TabIndex = 13;
             this.button14.Text = "button14";
             this.button14.UseVisualStyleBackColor = false;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // panel4
             // 
@@ -366,15 +376,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
-            // 
-            // label4
-            // 
-            this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label4.Location = new System.Drawing.Point(12, 4);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(177, 24);
-            this.label4.TabIndex = 13;
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // Form1
             // 

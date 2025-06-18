@@ -72,6 +72,33 @@ namespace C__project_unicom_tic.controlar
             }
         }
 
+        public void Update_User(user_modal user)
+        {
+            using (var connection = DB_connection.Get_Connection())
+            {
+                string query = @"UPDATE User_table 
+                         SET User_name = @User_name, 
+                             Password = @Password 
+                         WHERE User_id = @User_id;";
+
+                using (SQLiteCommand cmd = new SQLiteCommand(query, connection))
+                {
+                    cmd.Parameters.AddWithValue("@User_name", user.Name);
+                    cmd.Parameters.AddWithValue("@Password", user.Password);
+                    cmd.Parameters.AddWithValue("@User_id", user.User_id);
+
+                    int rowsAffected = cmd.ExecuteNonQuery();
+                    if (rowsAffected > 0)
+                    {
+                        MessageBox.Show("User updated successfully.");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Update failed. User ID not found.");
+                    }
+                }
+            }
+        }
 
     }
 }

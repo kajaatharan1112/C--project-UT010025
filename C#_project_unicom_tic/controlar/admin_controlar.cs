@@ -16,7 +16,6 @@ namespace C__project_unicom_tic.controlar
         {
             using (var connection = DB_connection.Get_Connection())
             {
-                //connection.Open(); // Ensure the connection is open
                 string query = "INSERT INTO Admin_table (Name, Nic_number, Address) VALUES (@Name, @Nic_number, @Address);";
 
                 using (SQLiteCommand cmd = new SQLiteCommand(query, connection))

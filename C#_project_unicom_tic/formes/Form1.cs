@@ -44,7 +44,7 @@ namespace C__project_unicom_tic
             button13.Visible = false;
             button14.Visible = false;
             button15.Visible = false;
-            label1.Text = Date;
+            //label1.Text = Date;
 
         }
         
@@ -219,6 +219,13 @@ namespace C__project_unicom_tic
         private void label4_Click(object sender, EventArgs e)
         {
             label4.Text = label4.Text.Trim();
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            staf_detail_ data = new staf_detail_(ROOL_ID);
+            LoadForm_1(data);
+
         }
     }
 }

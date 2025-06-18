@@ -182,6 +182,12 @@ namespace C__project_unicom_tic.formes
                     Name = textBox_user_name.Text.Trim(),
                     Password = "Admin@123"
                 };
+                User_Controlar_.add_user(data3);
+
+                textBox_user_name.Text = "";
+                textBox_user_name.Visible = false;
+                button1.Visible = false;
+                
             }
 
         }
@@ -259,6 +265,11 @@ namespace C__project_unicom_tic.formes
         }
 
         private void label_user_name_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
         {
 
         }
