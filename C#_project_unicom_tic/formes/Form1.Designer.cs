@@ -269,7 +269,7 @@
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(176, 26);
             this.button14.TabIndex = 13;
-            this.button14.Text = "button14";
+            this.button14.Text = "STAF_DETAIL";
             this.button14.UseVisualStyleBackColor = false;
             this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
@@ -376,6 +376,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // Form1
             // 

@@ -53,9 +53,8 @@ namespace C__project_unicom_tic
         {
             if (this.panel4.Controls.Count > 0)
             {
-                this.panel4.Controls.RemoveAt(0);
+                panel4.Controls.Clear();
             }
-
             Form form = formObj as Form;
             form.TopLevel = false;
             form.Dock = DockStyle.Fill;
@@ -63,21 +62,7 @@ namespace C__project_unicom_tic
             this.panel4.Tag = form;
             form.Show();
         }
-        public void LoadForm_2(object formObj)
-        {
-            if (this.panel3.Controls.Count>0)
-            {
-                this.panel3.Controls.RemoveAt(0); 
-            }
-            Form form = formObj as Form;
-            form.TopLevel = false;
-            form.Dock = DockStyle.Fill;
-            this.panel3.Controls.Add(form);
-            this.panel3.Tag = form;
-            form.Show();
-
-
-        }
+       
         private void button1_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -225,6 +210,11 @@ namespace C__project_unicom_tic
         {
             staf_detail_ data = new staf_detail_(ROOL_ID);
             LoadForm_1(data);
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
 
         }
     }

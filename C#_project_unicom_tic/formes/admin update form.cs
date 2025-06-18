@@ -17,7 +17,6 @@ namespace C__project_unicom_tic.formes
     public partial class admin_update_form : Form
     {
         private admin_controlar Admin_controlar;
-        private user_controlar_ User_Controlar_;
         public int id;
         public int update_id;
 
@@ -27,7 +26,6 @@ namespace C__project_unicom_tic.formes
             id = dd;
 
             Admin_controlar = new admin_controlar();
-            User_Controlar_=new user_controlar_();
             InitializeComponent();
             viw();
 
@@ -71,7 +69,7 @@ namespace C__project_unicom_tic.formes
 
                 label_show.Text = Convert.ToString(id);
                 Admin_controlar.delete_admin_(id);
-                User_Controlar_.delete_user_(id);
+                Admin_controlar.delete_user_(id);
                 viw();
                 MessageBox.Show("bye bye");
                 Application.Exit();
@@ -127,9 +125,9 @@ namespace C__project_unicom_tic.formes
             }
             else
             {
-               //label2.Visible = true;
-                label2.Text = "Complete all details.";
-                label2.ForeColor = Color.Red;
+                //label2.Visible = true;
+                label_show.Text = "Complete all details.";
+                label_show.ForeColor = Color.Red;
             }
 
         }
@@ -182,12 +180,15 @@ namespace C__project_unicom_tic.formes
                     Name = textBox_user_name.Text.Trim(),
                     Password = "Admin@123"
                 };
-                User_Controlar_.add_user(data3);
+                Admin_controlar.add_user(data3);
 
                 textBox_user_name.Text = "";
                 textBox_user_name.Visible = false;
                 button1.Visible = false;
-                
+                label_user_name.Visible = false;
+                label4.Visible = false;
+
+
             }
 
         }
@@ -195,7 +196,7 @@ namespace C__project_unicom_tic.formes
         private void textBox_user_name_TextChanged(object sender, EventArgs e)
         {
             textBox_user_name.Text=textBox_user_name.Text.Trim();
-            List<user_modal> existingUsers = User_Controlar_.show_user_Output();
+            List<user_modal> existingUsers = Admin_controlar.show_user_Output();
             bool nameExists = existingUsers.Any(u => u.Name.Equals(textBox_user_name.Text.Trim(), StringComparison.OrdinalIgnoreCase));
 
             if (nameExists)
@@ -254,8 +255,8 @@ namespace C__project_unicom_tic.formes
             }
             else
             {
-                label2.Text = "Complete all details.";
-                label2.ForeColor = Color.Red;
+                label_show.Text = "Complete all details.";
+                label_show.ForeColor = Color.Red;
             }
         }
 
