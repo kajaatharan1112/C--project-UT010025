@@ -76,6 +76,12 @@
     <Compile Include="formes\staf_detail_.Designer.cs">
       <DependentUpon>staf_detail_.cs</DependentUpon>
     </Compile>
+    <Compile Include="formes\teacher detail_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formes\teacher detail_form.Designer.cs">
+      <DependentUpon>teacher detail_form.cs</DependentUpon>
+    </Compile>
     <Compile Include="modals\admin_modal.cs" />
     <Compile Include="modals\class_modal.cs" />
     <Compile Include="modals\Corse_modal.cs" />
@@ -100,6 +106,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formes\staf_detail_.resx">
       <DependentUpon>staf_detail_.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formes\teacher detail_form.resx">
+      <DependentUpon>teacher detail_form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

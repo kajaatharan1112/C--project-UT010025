@@ -22,7 +22,9 @@ namespace C__project_unicom_tic.formes
             user_id = id;
             InitializeComponent();
             Admin_Controlar = new admin_controlar();
-            vew();
+            vew(0);
+
+
 
             textBox_user_name.Visible=false;
             label_user_name.Visible = false;
@@ -35,11 +37,36 @@ namespace C__project_unicom_tic.formes
             label10.Visible = false;
             label11.Visible = false;
         }
-        private void vew()
-        {
 
+        private void vew(int dd)
+        {
             List<staf_modal> data = Admin_Controlar.all_staf_output();
-            dataGridView1.DataSource = data;
+            List<staf_modal> data_actve = new List<staf_modal>();
+            List<staf_modal> data_non_active = new List<staf_modal>();
+
+
+            foreach (staf_modal item in data)
+            {
+                if (item.status == "Non_Active")
+                {
+                    //item.status = "Non Active";
+                    data_non_active.Add(item);
+                }
+                else if (item.status == "Active")
+                {
+                    //item.status = "Active";
+                    data_actve.Add(item);
+                }
+            }
+
+            if (dd == 1)
+            {
+                dataGridView1.DataSource = data_non_active;
+            }
+            else
+            {
+                dataGridView1.DataSource = data_actve;
+            }
             dataGridView1.ClearSelection();
             dataGridView1.Columns["Id"].Visible = false;
             dataGridView1.Columns["status"].Visible = false;
@@ -161,7 +188,7 @@ namespace C__project_unicom_tic.formes
                     button1.Visible = true;
                     label_user_name.Visible = true;
                     label4.Visible = true;
-                    vew();
+                    vew(0);
                 }
                 catch (Exception ex)
                 {
@@ -184,7 +211,10 @@ namespace C__project_unicom_tic.formes
 
         private void button_update_Click(object sender, EventArgs e)
         {
-            staf_modal data = new staf_modal();
+            if (!string.IsNullOrWhiteSpace(textBox_name.Text) &&
+                !string.IsNullOrWhiteSpace(textBox_Address.Text) &&
+                !string.IsNullOrWhiteSpace(textBox_nic_number.Text))
+            { staf_modal data = new staf_modal();
             data.Id = update_id;
             data.Name = textBox_name.Text;
             data.Nic_number = Convert.ToInt32(textBox_nic_number.Text);
@@ -199,7 +229,7 @@ namespace C__project_unicom_tic.formes
             {
                 Admin_Controlar.update_staff(data);
                 //MessageBox.Show("Admin updated successfully!");
-                vew();
+                vew(0);
                 clear();
             }
             else
@@ -214,7 +244,14 @@ namespace C__project_unicom_tic.formes
             label9.Visible = false;
             label10.Visible = false;
             label11.Visible = false;
-            clear();
+                clear();
+            }
+            else
+            {
+                //label2.Visible = true;
+                label_show.Text = "Complete all details.";
+                label_show.ForeColor = Color.Red;
+            }
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -259,5 +296,95 @@ namespace C__project_unicom_tic.formes
         {
 
         }
+
+        private void button_Delete_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(textBox_name.Text) &&
+                !string.IsNullOrWhiteSpace(textBox_Address.Text) &&
+                !string.IsNullOrWhiteSpace(textBox_nic_number.Text))
+            { 
+                DialogResult result = MessageBox.Show(
+               "Are you sure you want to delete?",
+               "Confirm Delete",
+               MessageBoxButtons.YesNo,
+               MessageBoxIcon.Question
+               );
+
+                if (result == DialogResult.Yes)
+                {
+                    staf_modal data = new staf_modal();
+                    data.Id = update_id;
+                    data.Name = textBox_name.Text;
+                    data.Nic_number = Convert.ToInt32(textBox_nic_number.Text);
+                    data.Join_date = label7.Text;
+                    data.Out_date = DateTime.Now.ToString("yyyy-MM-dd");
+                    data.status = "Non_Active";
+                    data.Adderss = textBox_Address.Text.Trim();
+
+                    if (!string.IsNullOrWhiteSpace(data.Name) &&
+                        !string.IsNullOrWhiteSpace(data.Adderss) &&
+                        !string.IsNullOrWhiteSpace(textBox_nic_number.Text))
+                    {
+                        Admin_Controlar.update_staff(data);
+                        vew(0);
+                        clear();
+                    }
+                    else
+                    {
+                        label_show.Text = "Complete all details.";
+                        label_show.ForeColor = Color.Red;
+                    }
+
+                    label6.Visible = false;
+                    label7.Visible = false;
+                    label8.Visible = false;
+                    label9.Visible = false;
+                    label10.Visible = false;
+                    label11.Visible = false;
+                    clear();
+
+                    Admin_Controlar.delete_user_(update_id);
+
+                    MessageBox.Show("bye bye");
+                    // Application.Exit();
+                }
+                else
+                {
+                    vew(0);
+                    MessageBox.Show("Delete operation cancelled.");
+                }
+            }
+            else
+            {
+                //label2.Visible = true;
+                label_show.Text = "Complete all details.";
+                label_show.ForeColor = Color.Red;
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            button_add.Visible = false;
+            button_update.Visible = false;
+            button_Delete.Visible = false;
+            vew(1);
+            clear();
+        }
+
+        private void staf_detail_Click(object sender, EventArgs e)
+        {
+
+            button_add.Visible = true;
+            button_update.Visible = true;
+            button_Delete.Visible = true;
+            vew(0);
+            clear();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
+    
 }

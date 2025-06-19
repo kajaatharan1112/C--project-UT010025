@@ -217,5 +217,11 @@ namespace C__project_unicom_tic
         {
 
         }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            teacher_detail_form teacher_Detail_Form = new teacher_detail_form(ROOL_ID);
+            LoadForm_1(teacher_Detail_Form);
+        }
     }
 }
