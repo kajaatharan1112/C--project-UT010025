@@ -148,8 +148,9 @@
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(176, 26);
             this.button12.TabIndex = 24;
-            this.button12.Text = "button12";
+            this.button12.Text = "batch";
             this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // button11
             // 

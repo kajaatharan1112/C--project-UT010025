@@ -223,5 +223,11 @@ namespace C__project_unicom_tic
             teacher_detail_form teacher_Detail_Form = new teacher_detail_form(ROOL_ID);
             LoadForm_1(teacher_Detail_Form);
         }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            corse_form corse_Form = new corse_form(ROOL_ID);
+            LoadForm_1(corse_Form);
+        }
     }
 }

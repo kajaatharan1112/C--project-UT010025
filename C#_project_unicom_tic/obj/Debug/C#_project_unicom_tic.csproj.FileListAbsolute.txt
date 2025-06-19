@@ -72,3 +72,21 @@ C:\Users\kajaa\OneDrive\Desktop\clone C#\C--project-UT010025\C#_project_unicom_t
 C:\Users\UT010025\Desktop\New folder\C--project-UT010025\C#_project_unicom_tic\obj\Debug\C__project_unicom_tic.formes.staf_detail_.resources
 C:\Users\kajaa\OneDrive\Desktop\New folder\C--project-UT010025\C#_project_unicom_tic\obj\Debug\C__project_unicom_tic.formes.staf_detail_.resources
 C:\Users\kajaa\OneDrive\Desktop\New folder\C--project-UT010025\C#_project_unicom_tic\obj\Debug\C__project_unicom_tic.formes.teacher_detail_form.resources
+C:\Users\kajaa\OneDrive\Desktop\clone\C--project-UT010025\C#_project_unicom_tic\bin\Debug\C#_project_unicom_tic.exe.config
+C:\Users\kajaa\OneDrive\Desktop\clone\C--project-UT010025\C#_project_unicom_tic\bin\Debug\C#_project_unicom_tic.exe
+C:\Users\kajaa\OneDrive\Desktop\clone\C--project-UT010025\C#_project_unicom_tic\bin\Debug\C#_project_unicom_tic.pdb
+C:\Users\kajaa\OneDrive\Desktop\clone\C--project-UT010025\C#_project_unicom_tic\bin\Debug\System.Data.SQLite.dll
+C:\Users\kajaa\OneDrive\Desktop\clone\C--project-UT010025\C#_project_unicom_tic\bin\Debug\System.Data.SQLite.xml
+C:\Users\kajaa\OneDrive\Desktop\clone\C--project-UT010025\C#_project_unicom_tic\obj\Debug\C#_project_unicom_tic.csproj.AssemblyReference.cache
+C:\Users\kajaa\OneDrive\Desktop\clone\C--project-UT010025\C#_project_unicom_tic\obj\Debug\C#_project_unicom_tic.exe.config
+C:\Users\kajaa\OneDrive\Desktop\clone\C--project-UT010025\C#_project_unicom_tic\obj\Debug\C__project_unicom_tic.formes.admin_update_form.resources
+C:\Users\kajaa\OneDrive\Desktop\clone\C--project-UT010025\C#_project_unicom_tic\obj\Debug\C__project_unicom_tic.formes.corse_form.resources
+C:\Users\kajaa\OneDrive\Desktop\clone\C--project-UT010025\C#_project_unicom_tic\obj\Debug\C__project_unicom_tic.Form1.resources
+C:\Users\kajaa\OneDrive\Desktop\clone\C--project-UT010025\C#_project_unicom_tic\obj\Debug\C__project_unicom_tic.formes.staf_detail_.resources
+C:\Users\kajaa\OneDrive\Desktop\clone\C--project-UT010025\C#_project_unicom_tic\obj\Debug\C__project_unicom_tic.formes.teacher_detail_form.resources
+C:\Users\kajaa\OneDrive\Desktop\clone\C--project-UT010025\C#_project_unicom_tic\obj\Debug\C__project_unicom_tic.Properties.Resources.resources
+C:\Users\kajaa\OneDrive\Desktop\clone\C--project-UT010025\C#_project_unicom_tic\obj\Debug\C#_project_unicom_tic.csproj.GenerateResource.cache
+C:\Users\kajaa\OneDrive\Desktop\clone\C--project-UT010025\C#_project_unicom_tic\obj\Debug\C#_project_unicom_tic.csproj.CoreCompileInputs.cache
+C:\Users\kajaa\OneDrive\Desktop\clone\C--project-UT010025\C#_project_unicom_tic\obj\Debug\C#_proje.38EAD447.Up2Date
+C:\Users\kajaa\OneDrive\Desktop\clone\C--project-UT010025\C#_project_unicom_tic\obj\Debug\C#_project_unicom_tic.exe
+C:\Users\kajaa\OneDrive\Desktop\clone\C--project-UT010025\C#_project_unicom_tic\obj\Debug\C#_project_unicom_tic.pdb

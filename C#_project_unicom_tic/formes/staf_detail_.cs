@@ -385,6 +385,15 @@ namespace C__project_unicom_tic.formes
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            button_add.Visible = false;
+            button_update.Visible = false;
+            button_Delete.Visible = false;
+            vew(1);
+            clear();
+        }
     }
     
 }

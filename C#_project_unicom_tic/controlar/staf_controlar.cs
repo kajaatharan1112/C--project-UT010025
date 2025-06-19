@@ -12,6 +12,12 @@ namespace C__project_unicom_tic.controlar
 {
     internal class staf_controlar : teacher_controlar
     {
+
+        //The jobs that are allowed only for admin and staf are mentioned below.
+        //Changes made to the schedule for teacher
+        //
+        //
+        //
         public void add_teacher(teacher_modl data)
         {
             using (var connection = DB_connection.Get_Connection())
@@ -199,7 +205,144 @@ namespace C__project_unicom_tic.controlar
             return data;
         }
 
+        //The jobs that are allowed only for admin and staf are mentioned below.
+        //Changes made to the schedule for batch
+        //
+        //
+        //
 
+        public void add_course(Corse_modal data)
+        {
+            using (var connection = DB_connection.Get_Connection())
+            {
+                string query = "INSERT INTO Course_table (Name, Status, Join_date, Out_date) VALUES (@Name, @Status, @Join_date, @Out_date);";
+
+                using (SQLiteCommand cmd = new SQLiteCommand(query, connection))
+                {
+                    cmd.Parameters.AddWithValue("@Name", data.Name);
+                    cmd.Parameters.AddWithValue("@Status", data.status);
+                    cmd.Parameters.AddWithValue("@Join_date", data.Join_date);
+                    cmd.Parameters.AddWithValue("@Out_date", data.Out_date);
+
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("New course added successfully!");
+                }
+            }
+        }
+
+
+        public List<Corse_modal> show_course_Output()
+        {
+            List<Corse_modal> data = new List<Corse_modal>();
+
+            using (var connection = DB_connection.Get_Connection())
+            {
+                string query = @"SELECT * FROM Course_table;";
+
+                using (SQLiteCommand cmd = new SQLiteCommand(query, connection))
+                {
+                    using (SQLiteDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            data.Add(new Corse_modal
+                            {
+                                Id = reader.GetInt32(0),
+                                Name = reader.GetString(1),
+                                status = reader.GetString(2),
+                                Join_date = reader.GetString(3),
+                                Out_date = reader.GetString(4)
+                            });
+                        }
+                    }
+                }
+            }
+            return data;
+        }
+
+
+        public Corse_modal show_course(int course_id)
+        {
+            using (var connection = DB_connection.Get_Connection())
+            {
+                string query = @"SELECT * FROM Course_table WHERE Id = @Id;";
+
+                using (SQLiteCommand cmd = new SQLiteCommand(query, connection))
+                {
+                    cmd.Parameters.AddWithValue("@Id", course_id);
+
+                    using (SQLiteDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            return new Corse_modal
+                            {
+                                Id = reader.GetInt32(0),
+                                Name = reader.GetString(1),
+                                status = reader.GetString(2),
+                                Join_date = reader.GetString(3),
+                                Out_date = reader.GetString(4)
+                            };
+                        }
+                    }
+                }
+            }
+
+            return new Corse_modal
+            {
+                Id = 0,
+                Name = "Not Found",
+                status = "Not Found",
+                Join_date = "Not Found",
+                Out_date = "Not Found"
+            };
+        }
+
+        public void delete_course(int course_id)
+        {
+            using (var connection = DB_connection.Get_Connection())
+            {
+                string query = @"DELETE FROM Course_table WHERE Id = @Id;";
+                using (SQLiteCommand cmd = new SQLiteCommand(query, connection))
+                {
+                    cmd.Parameters.AddWithValue("@Id", course_id);
+                    int rowsAffected = cmd.ExecuteNonQuery();
+                }
+            }
+        }
+
+
+        public void update_course(Corse_modal course)
+        {
+            using (var connection = DB_connection.Get_Connection())
+            {
+                string query = @"UPDATE Course_table 
+                         SET Name = @Name, 
+                             Status = @Status, 
+                             Join_date = @Join_date, 
+                             Out_date = @Out_date 
+                         WHERE Id = @Id AND Id > 100050 AND Id <= 100900;";
+
+                using (SQLiteCommand cmd = new SQLiteCommand(query, connection))
+                {
+                    cmd.Parameters.AddWithValue("@Name", course.Name);
+                    cmd.Parameters.AddWithValue("@Status", course.status);
+                    cmd.Parameters.AddWithValue("@Join_date", course.Join_date);
+                    cmd.Parameters.AddWithValue("@Out_date", course.Out_date);
+                    cmd.Parameters.AddWithValue("@Id", course.Id);
+
+                    int rowsAffected = cmd.ExecuteNonQuery();
+                    if (rowsAffected > 0)
+                    {
+                        MessageBox.Show("Course updated successfully.");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Update failed. ID may be out of valid range.");
+                    }
+                }
+            }
+        }
 
 
     }
