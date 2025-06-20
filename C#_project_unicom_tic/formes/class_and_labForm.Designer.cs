@@ -52,6 +52,7 @@
             this.textBox_name.Name = "textBox_name";
             this.textBox_name.Size = new System.Drawing.Size(216, 20);
             this.textBox_name.TabIndex = 26;
+            this.textBox_name.TextChanged += new System.EventHandler(this.textBox_name_TextChanged);
             // 
             // label1
             // 
@@ -70,6 +71,7 @@
             this.button_Delete.TabIndex = 24;
             this.button_Delete.Text = "DIL_you";
             this.button_Delete.UseVisualStyleBackColor = true;
+            this.button_Delete.Click += new System.EventHandler(this.button_Delete_Click);
             // 
             // button_update
             // 
@@ -79,6 +81,7 @@
             this.button_update.TabIndex = 23;
             this.button_update.Text = "UPDATE";
             this.button_update.UseVisualStyleBackColor = true;
+            this.button_update.Click += new System.EventHandler(this.button_update_Click);
             // 
             // button_add
             // 
@@ -88,15 +91,17 @@
             this.button_add.TabIndex = 22;
             this.button_add.Text = "ADD";
             this.button_add.UseVisualStyleBackColor = true;
+            this.button_add.Click += new System.EventHandler(this.button_add_Click);
             // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToOrderColumns = true;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(397, 176);
+            this.dataGridView1.Location = new System.Drawing.Point(473, 128);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(309, 258);
+            this.dataGridView1.Size = new System.Drawing.Size(210, 385);
             this.dataGridView1.TabIndex = 21;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // class_and_labForm
             // 

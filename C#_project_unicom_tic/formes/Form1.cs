@@ -235,5 +235,11 @@ namespace C__project_unicom_tic
             class_and_labForm class_And_LabForm = new class_and_labForm(ROOL_ID);
             LoadForm_1(class_And_LabForm);
         }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            Time_table_form time_Table_Form = new Time_table_form(ROOL_ID);
+            LoadForm_1(time_Table_Form);
+        }
     }
 }

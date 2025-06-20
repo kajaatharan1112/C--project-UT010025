@@ -92,3 +92,5 @@ C:\Users\UT010025\Desktop\New folder\C--project-UT010025\C#_project_unicom_tic\o
 C:\Users\UT010025\Desktop\New folder\C--project-UT010025\C#_project_unicom_tic\obj\Debug\C#_proje.38EAD447.Up2Date
 C:\Users\UT010025\Desktop\New folder\C--project-UT010025\C#_project_unicom_tic\obj\Debug\C#_project_unicom_tic.exe
 C:\Users\UT010025\Desktop\New folder\C--project-UT010025\C#_project_unicom_tic\obj\Debug\C#_project_unicom_tic.pdb
+C:\Users\UT010025\Desktop\New folder\C--project-UT010025\C#_project_unicom_tic\obj\Debug\C__project_unicom_tic.formes.class_and_labForm.resources
+C:\Users\UT010025\Desktop\New folder\C--project-UT010025\C#_project_unicom_tic\obj\Debug\C__project_unicom_tic.formes.Time_table_form.resources
