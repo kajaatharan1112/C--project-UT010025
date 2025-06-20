@@ -137,5 +137,212 @@ namespace C__project_unicom_tic.controlar
         }
 
 
+        //time table funcations 
+        //
+        //
+        //
+        //
+        //
+        //
+        public void add_time_table(Time_table_modal data)
+        {
+            using (var connection = DB_connection.Get_Connection())
+            {
+                string query = @"INSERT INTO Time_table 
+                         (Date, Teacher, Course_Id, Time_Lap, Class_name, Status) 
+                         VALUES 
+                         (@Date, @Teacher, @Course_Id, @Time_Lap, @Class_name, @Status);";
+
+                using (SQLiteCommand cmd = new SQLiteCommand(query, connection))
+                {
+                    cmd.Parameters.AddWithValue("@Date", data.Date);
+                    cmd.Parameters.AddWithValue("@Teacher", data.Teacher);
+                    cmd.Parameters.AddWithValue("@Course_Id", data.Corse_id);
+                    cmd.Parameters.AddWithValue("@Time_Lap", data.Time_lap);
+                    cmd.Parameters.AddWithValue("@Class_name", data.class_name);
+                    cmd.Parameters.AddWithValue("@Status", data.status);
+
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("New time table record added!");
+                }
+            }
+        }
+
+
+        public List<Time_table_modal> show_time_table_Output()
+        {
+            List<Time_table_modal> data = new List<Time_table_modal>();
+
+            using (var connection = DB_connection.Get_Connection())
+            {
+                string query = @"SELECT * FROM Time_table;";
+
+                using (SQLiteCommand cmd = new SQLiteCommand(query, connection))
+                {
+                    using (SQLiteDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            data.Add(new Time_table_modal
+                            {
+                                Id = reader.GetInt32(0),
+                                Date = reader.GetString(1),
+                                Teacher = reader.GetString(2),
+                                Corse_id = reader.GetInt32(3),
+                                Time_lap = reader.GetString(4),
+                                class_name = reader.GetString(5),
+                                status = reader.GetString(6)
+                            });
+                        }
+                    }
+                }
+            }
+
+            return data;
+        }
+
+
+
+        public List<Time_table_modal> Get_TimeTable_By_Date_And_Course(string date, int course_id)
+        {
+            List<Time_table_modal> result = new List<Time_table_modal>();
+
+            using (var connection = DB_connection.Get_Connection())
+            {
+                string query = @"SELECT * FROM Time_table WHERE Date = @Date AND Course_Id = @CourseId;";
+
+                using (SQLiteCommand cmd = new SQLiteCommand(query, connection))
+                {
+                    cmd.Parameters.AddWithValue("@Date", date);
+                    cmd.Parameters.AddWithValue("@CourseId", course_id);
+
+                    using (SQLiteDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            Time_table_modal item = new Time_table_modal
+                            {
+                                Id = reader.GetInt32(0),
+                                Date = reader.GetString(1),
+                                Teacher = reader.GetString(2),
+                                Corse_id = reader.GetInt32(3),
+                                Time_lap = reader.GetString(4),
+                                class_name = reader.GetString(5),
+                                status = reader.GetString(6)
+                            };
+
+                            result.Add(item);
+                        }
+                    }
+                }
+            }
+
+            return result;
+
+        }
+
+
+        public void update_time_table(Time_table_modal data)
+        {
+            using (var connection = DB_connection.Get_Connection())
+            {
+                string query = @"UPDATE Time_table 
+                         SET Date = @Date,
+                             Teacher = @Teacher,
+                             Course_Id = @Course_Id,
+                             Time_Lap = @Time_Lap,
+                             Class_name = @Class_name,
+                             Status = @Status
+                         WHERE Id = @Id AND Id BETWEEN 10000000 AND 99999999;";
+
+                using (SQLiteCommand cmd = new SQLiteCommand(query, connection))
+                {
+                    cmd.Parameters.AddWithValue("@Date", data.Date);
+                    cmd.Parameters.AddWithValue("@Teacher", data.Teacher);
+                    cmd.Parameters.AddWithValue("@Course_Id", data.Corse_id);
+                    cmd.Parameters.AddWithValue("@Time_Lap", data.Time_lap);
+                    cmd.Parameters.AddWithValue("@Class_name", data.class_name);
+                    cmd.Parameters.AddWithValue("@Status", data.status);
+                    cmd.Parameters.AddWithValue("@Id", data.Id);
+
+                    int rowsAffected = cmd.ExecuteNonQuery();
+                    if (rowsAffected > 0)
+                        MessageBox.Show("Time table updated successfully!");
+                    else
+                        MessageBox.Show("Update failed. Invalid ID.");
+                }
+            }
+        }
+
+        public Time_table_modal get_time_table_by_id(int id)
+        {
+            using (var connection = DB_connection.Get_Connection())
+            {
+                string query = @"SELECT * FROM Time_table WHERE Id = @Id;";
+
+                using (SQLiteCommand cmd = new SQLiteCommand(query, connection))
+                {
+                    cmd.Parameters.AddWithValue("@Id", id);
+
+                    using (SQLiteDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            return new Time_table_modal
+                            {
+                                Id = reader.GetInt32(0),
+                                Date = reader.GetString(1),
+                                Teacher = reader.GetString(2),
+                                Corse_id = reader.GetInt32(3),
+                                Time_lap = reader.GetString(4),
+                                class_name = reader.GetString(5),
+                                status = reader.GetString(6)
+                            };
+                        }
+                    }
+                }
+            }
+
+            // Return default object if not found
+            return new Time_table_modal
+            {
+                Id = 0,
+                Date = "Not Found",
+                Teacher = "Not Found",
+                Corse_id = 0,
+                Time_lap = "Not Found",
+                class_name = "Not Found",
+                status = "Not Found"
+            };
+        }
+                    
+
+        public void delete_time_table(int id, string date)
+        {
+            using (var connection = DB_connection.Get_Connection())
+            {
+                string query = @"DELETE FROM Time_table WHERE Id = @Id AND Date = @Date;";
+
+                using (SQLiteCommand cmd = new SQLiteCommand(query, connection))
+                {
+                    cmd.Parameters.AddWithValue("@Id", id);
+                    cmd.Parameters.AddWithValue("@Date", date);
+
+                    int rowsAffected = cmd.ExecuteNonQuery();
+
+                    if (rowsAffected > 0)
+                    {
+                        MessageBox.Show("Time table entry deleted successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("No matching time table entry found.", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+            }
+        }
     }
+
+
 }
+

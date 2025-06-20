@@ -32,8 +32,6 @@ namespace C__project_unicom_tic
 
             pictureBox1.Visible = false;
             button3.Visible = false;
-            button4.Visible = false;
-            button5.Visible = false;
             button6.Visible = false;
             button7.Visible = false;
             button8.Visible = false;
@@ -130,8 +128,6 @@ namespace C__project_unicom_tic
                         //--------------------------------
                         pictureBox1.Visible = true;
                         button3.Visible = true;
-                        button4.Visible = true;
-                        button5.Visible = true;
                         button6.Visible = true;
                         button7.Visible = true;
                         button8.Visible = true;

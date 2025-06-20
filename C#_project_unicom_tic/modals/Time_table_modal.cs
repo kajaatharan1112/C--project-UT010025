@@ -10,10 +10,10 @@ namespace C__project_unicom_tic.modals
     {
         public int Id {  get; set; }
         public string Date {  get; set; }
-        public int Teacher_id {  get; set; }
+        public string Teacher {  get; set; }
         public int Corse_id {  get; set; }
-        public int Time_lap_id {  get; set; }
-        public int class_id {  get; set; }
+        public string Time_lap {  get; set; }
+        public string class_name {  get; set; }
         public string status {  get; set; }
 
         

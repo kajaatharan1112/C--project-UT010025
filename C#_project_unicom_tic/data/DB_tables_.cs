@@ -76,14 +76,12 @@ namespace C__project_unicom_tic.data
                     CREATE TABLE IF NOT EXISTS Time_table (
                         Id INTEGER PRIMARY KEY AUTOINCREMENT,
                         Date TEXT NOT NULL,
-                        Teacher_Id INTEGER NOT NULL,
+                        Teacher TEXT NOT NULL,
                         Course_Id INTEGER NOT NULL,
-                        Time_Lap_Id INTEGER NOT NULL,
-                        Class_Id INTEGER NOT NULL,
+                        Time_Lap TEXT NOT NULL,
+                        Class_name TEXT NOT NULL,
                         Status TEXT NOT NULL,
                         FOREIGN KEY (Course_Id) REFERENCES Course_table(Id),
-                        FOREIGN KEY (Teacher_Id) REFERENCES Teacher_table(Id),
-                        FOREIGN KEY (Class_Id) REFERENCES Class_table(Id),
                         CHECK (Id > 10000000 AND Id < 99999999)
                     );
 
