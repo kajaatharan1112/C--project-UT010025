@@ -64,6 +64,12 @@
     <Compile Include="formes\admin update form.Designer.cs">
       <DependentUpon>admin update form.cs</DependentUpon>
     </Compile>
+    <Compile Include="formes\class_and_labForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formes\class_and_labForm.Designer.cs">
+      <DependentUpon>class_and_labForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="formes\corse_form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +112,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="formes\admin update form.resx">
       <DependentUpon>admin update form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formes\class_and_labForm.resx">
+      <DependentUpon>class_and_labForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formes\corse_form.resx">
       <DependentUpon>corse_form.cs</DependentUpon>

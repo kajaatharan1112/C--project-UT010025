@@ -160,8 +160,9 @@
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(176, 26);
             this.button11.TabIndex = 23;
-            this.button11.Text = "button11";
+            this.button11.Text = "class and lab";
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button10
             // 

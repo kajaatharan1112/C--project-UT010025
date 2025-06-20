@@ -229,5 +229,11 @@ namespace C__project_unicom_tic
             corse_form corse_Form = new corse_form(ROOL_ID);
             LoadForm_1(corse_Form);
         }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            class_and_labForm class_And_LabForm = new class_and_labForm(ROOL_ID);
+            LoadForm_1(class_And_LabForm);
+        }
     }
 }

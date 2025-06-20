@@ -344,6 +344,59 @@ namespace C__project_unicom_tic.controlar
             }
         }
 
+        //The jobs that are allowed only for admin and staf are mentioned below.
+        //Changes made to the schedule for batch_techer asiment
+        //
+        //
+        //
+
+
+        public  void add_teacher_vs_course(teacher_vs_corse_modal data)
+        {
+            string query = "INSERT INTO Course_Teacher (Course_Id, Teacher_Id) VALUES (@Course_Id, @Teacher_Id)";
+
+            using (var connection = DB_connection.Get_Connection())
+            {
+                //con.Open();
+                using (SQLiteCommand cmd = new SQLiteCommand(query, connection))
+                {
+                    cmd.Parameters.AddWithValue("@Course_Id", data.corse_id);
+                    cmd.Parameters.AddWithValue("@Teacher_Id", data.teacher_id);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
+
+
+
+        public List<teacher_vs_corse_modal> ShowCourseTeacherOutput()
+        {
+            List<teacher_vs_corse_modal> data = new List<teacher_vs_corse_modal>();
+
+            using  (var connection = DB_connection.Get_Connection())
+            {
+                //connection.Open();
+                string query = "SELECT * FROM Course_Teacher;";
+
+                using (SQLiteCommand cmd = new SQLiteCommand(query, connection))
+                {
+                    using (SQLiteDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            data.Add(new teacher_vs_corse_modal
+                            {
+                                corse_id = reader.IsDBNull(0) ? 0 : reader.GetInt32(0),
+                                teacher_id = reader.IsDBNull(1) ? 0 : reader.GetInt32(1)
+                            });
+                        }
+                    }
+                }
+            }
+
+            return data;
+        }
+
 
     }
 

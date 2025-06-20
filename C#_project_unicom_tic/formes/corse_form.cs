@@ -30,6 +30,48 @@ namespace C__project_unicom_tic.formes
             label9.Visible = false;
             label10.Visible = false;
             label11.Visible = false;
+
+
+            button1.Visible = false;  
+            button3.Visible = false;
+            button5.Visible = false;
+            comboBox1.Visible = false;
+        }
+
+
+        private void subject_viw()
+        {
+            List<teacher_vs_corse_modal> data1 = Staf_Controlar.ShowCourseTeacherOutput();
+            List<teacher_vs_corse_modal> data2 = new List<teacher_vs_corse_modal>();
+            List<teacher_modl> data3 = new List<teacher_modl>();
+
+            foreach (teacher_vs_corse_modal i in data1)
+            {
+                if (i.corse_id == update_id)
+                {
+                    data2.Add(i);
+                }
+            }
+
+            foreach (teacher_vs_corse_modal i in data2)
+            {
+                teacher_modl data4 = Staf_Controlar.show_teacher_(i.teacher_id);
+                if (data4 != null)
+                {
+                    data3.Add(data4);
+                }
+            }
+
+            dataGridView1.DataSource = null;             // Clear old data first
+            dataGridView1.DataSource = data3;            // Bind list, not single object
+            dataGridView1.ClearSelection();
+
+            if (dataGridView1.Columns.Contains("Id"))
+            {
+                dataGridView1.Columns["Id"].Visible = false;
+            }
+
+            // clear(); // uncomment if needed
         }
 
 
@@ -135,7 +177,13 @@ namespace C__project_unicom_tic.formes
                     label10.Visible = true;
                     label11.Visible = true;
 
+                    button1.Visible = true;
+                    button3.Visible = true;
+                    button5.Visible = true;
+                    comboBox1.Visible = true;
+
                     // Populate UI fields
+                    // update_id += course_data.Id;
                     textBox_name.Text = course_data.Name;
                     label7.Text = course_data.Join_date;
                     label8.Text = course_data.Out_date;
@@ -227,6 +275,79 @@ namespace C__project_unicom_tic.formes
             label9.Visible = false;
             label10.Visible = false;
             label11.Visible = false;
+
+            button1.Visible = false;
+            button3.Visible = false;
+            button5.Visible = false;
+            comboBox1.Visible = false;
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+           // update_id = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["Id"].Value);
+            List<teacher_modl> data = Staf_Controlar.show_teacher_Output();
+            List<teacher_modl> data2 = new List<teacher_modl>();
+
+            // Filter only Active teachers
+            foreach (var item in data)
+            {
+                if (!string.IsNullOrEmpty(item.status) && item.status.Equals("Active", StringComparison.OrdinalIgnoreCase))
+                {
+                    data2.Add(item);
+                }
+            }
+
+            // Bind to ComboBox
+            if (data2.Count > 0)
+            {
+                comboBox1.DataSource = data2;
+                comboBox1.DisplayMember = "Subject";   // Or "Name", depending on your class
+                comboBox1.ValueMember = "Id";
+                comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
+            }
+            else
+            {
+                comboBox1.DataSource = null;
+                MessageBox.Show("No active teachers available.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (comboBox1.SelectedValue != null)
+            {
+                teacher_vs_corse_modal data1 = new teacher_vs_corse_modal();
+                data1.teacher_id = Convert.ToInt32(comboBox1.SelectedValue);
+                data1.corse_id = update_id;
+
+                Staf_Controlar.add_teacher_vs_course(data1);
+            }
+            else
+            {
+                MessageBox.Show("Please select a teacher from the list.");
+            }
+            subject_viw();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            subject_viw();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label_show_Click(object sender, EventArgs e)
+        {
 
         }
     }
