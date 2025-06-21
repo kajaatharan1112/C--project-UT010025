@@ -249,5 +249,11 @@ namespace C__project_unicom_tic
             password_Form password_Form = new password_Form(ROOL_ID);
             LoadForm_1(password_Form);
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            exam_Form exam_Form = new exam_Form(ROOL_ID);
+            LoadForm_1(exam_Form);
+        }
     }
 }

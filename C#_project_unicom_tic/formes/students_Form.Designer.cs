@@ -66,6 +66,7 @@
             this.staf_detail.TabIndex = 76;
             this.staf_detail.Text = "actvite_corse";
             this.staf_detail.UseVisualStyleBackColor = true;
+            this.staf_detail.Click += new System.EventHandler(this.staf_detail_Click);
             // 
             // button2
             // 
@@ -75,6 +76,7 @@
             this.button2.TabIndex = 75;
             this.button2.Text = "past_corse";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label10
             // 

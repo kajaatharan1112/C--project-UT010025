@@ -269,11 +269,6 @@ namespace C__project_unicom_tic.formes
         private void textBox_nic_number_TextChanged(object sender, EventArgs e)
         {
             textBox_Address.Text = textBox_Address.Text.Trim();
-        }
-
-        private void textBox_user_name_TextChanged(object sender, EventArgs e)
-        {
-            textBox_user_name.Text = textBox_user_name.Text.Trim();
             try
             {
                 int dd = Convert.ToInt32(textBox_nic_number.Text);
@@ -283,6 +278,29 @@ namespace C__project_unicom_tic.formes
                 textBox_nic_number.Text = "";
 
             }
+        }
+
+        private void textBox_user_name_TextChanged(object sender, EventArgs e)
+        {
+            textBox_user_name.Text = textBox_user_name.Text.Trim();
+           // textBox_user_name.Text = textBox_user_name.Text.Trim();
+            //xtBox_user_name.Text = textBox_user_name.Text.Trim();
+            List<user_modal> existingUsers = Staf_Controlar.show_user_Output();
+            bool nameExists = existingUsers.Any(u => u.Name.Equals(textBox_user_name.Text.Trim(), StringComparison.OrdinalIgnoreCase));
+
+            if (nameExists)
+            {
+                label_user_name.Text = "User name already exists.";
+                label_user_name.ForeColor = Color.Red;
+                button1.Visible = false;
+            }
+            else
+            {
+                label_user_name.Text = "User name is available.";
+                label_user_name.ForeColor = Color.Green;
+                button1.Visible = true;
+            }
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -308,6 +326,62 @@ namespace C__project_unicom_tic.formes
                 label4.Visible = false;
 
 
+            }
+        }
+
+        private void staf_detail_Click(object sender, EventArgs e)
+        {
+            List<Corse_modal> data = Staf_Controlar.show_course_Output();
+            List<Corse_modal> data2 = new List<Corse_modal>();
+
+            foreach (var item in data)
+            {
+                if (!string.IsNullOrEmpty(item.status) && item.status.Equals("Active", StringComparison.OrdinalIgnoreCase))
+                {
+                    data2.Add(item);
+                }
+            }
+
+            // Bind to ComboBox
+            if (data2.Count > 0)
+            {
+                comboBox1.DataSource = data2;
+                comboBox1.DisplayMember = "Name";   // Or "Name", depending on your class
+                comboBox1.ValueMember = "Id";
+                comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
+            }
+            else
+            {
+                comboBox1.DataSource = null;
+                MessageBox.Show("No active teachers available.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            List<Corse_modal> data = Staf_Controlar.show_course_Output();
+            List<Corse_modal> data2 = new List<Corse_modal>();
+
+            foreach (var item in data)
+            {
+                if (!string.IsNullOrEmpty(item.status) && item.status.Equals("Non_Active", StringComparison.OrdinalIgnoreCase))
+                {
+                    data2.Add(item);
+                }
+            }
+
+            // Bind to ComboBox
+            if (data2.Count > 0)
+            {
+                comboBox1.DataSource = data2;
+                comboBox1.DisplayMember = "Name";   // Or "Name", depending on your class
+                comboBox1.ValueMember = "Id";
+                comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
+            }
+            else
+            {
+                comboBox1.DataSource = null;
+                MessageBox.Show("No active teachers available.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
     }

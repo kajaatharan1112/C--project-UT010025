@@ -76,6 +76,12 @@
     <Compile Include="formes\corse_form.Designer.cs">
       <DependentUpon>corse_form.cs</DependentUpon>
     </Compile>
+    <Compile Include="formes\exam_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formes\exam_Form.Designer.cs">
+      <DependentUpon>exam_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="formes\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +142,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formes\corse_form.resx">
       <DependentUpon>corse_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formes\exam_Form.resx">
+      <DependentUpon>exam_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formes\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
