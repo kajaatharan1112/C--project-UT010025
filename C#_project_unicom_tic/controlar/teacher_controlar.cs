@@ -315,18 +315,17 @@ namespace C__project_unicom_tic.controlar
                 status = "Not Found"
             };
         }
-                    
 
-        public void delete_time_table(int id, string date)
+
+        public void delete_time_table(int id)
         {
             using (var connection = DB_connection.Get_Connection())
             {
-                string query = @"DELETE FROM Time_table WHERE Id = @Id AND Date = @Date;";
+                string query = @"DELETE FROM Time_table WHERE Id = @Id;";
 
                 using (SQLiteCommand cmd = new SQLiteCommand(query, connection))
                 {
                     cmd.Parameters.AddWithValue("@Id", id);
-                    cmd.Parameters.AddWithValue("@Date", date);
 
                     int rowsAffected = cmd.ExecuteNonQuery();
 
@@ -341,6 +340,7 @@ namespace C__project_unicom_tic.controlar
                 }
             }
         }
+
     }
 
 

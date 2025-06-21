@@ -148,7 +148,7 @@ namespace C__project_unicom_tic.data
                     INSERT OR REPLACE INTO sqlite_sequence (name, seq) VALUES ('Teacher_table', 249999);
                     INSERT OR REPLACE INTO sqlite_sequence (name, seq) VALUES ('Staff_table', 104999);
                     INSERT OR REPLACE INTO sqlite_sequence (name, seq) VALUES ('Time_table', 10000000);
-                    INSERT OR REPLACE INTO sqlite_sequence (name, seq) VALUES ('Student_table', 599999);
+                    INSERT OR REPLACE INTO sqlite_sequence (name, seq) VALUES ('Student_table', 600001);
                     INSERT OR REPLACE INTO sqlite_sequence (name, seq) VALUES ('Exam_table', 1000);
 
 

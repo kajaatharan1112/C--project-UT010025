@@ -14,8 +14,5 @@ namespace C__project_unicom_tic.modals
         public int Nic_number { get; set; }
         public string status { get; set; }
         public string Adderss { get; set; }
-
-
-
     }
 }

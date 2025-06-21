@@ -32,6 +32,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button12 = new System.Windows.Forms.Button();
@@ -53,7 +54,6 @@
             this.Password = new System.Windows.Forms.Label();
             this.User_name = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -112,6 +112,17 @@
             this.panel3.Size = new System.Drawing.Size(200, 700);
             this.panel3.TabIndex = 2;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(15, 230);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(176, 26);
+            this.button3.TabIndex = 27;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = false;
             // 
             // button15
             // 
@@ -180,8 +191,9 @@
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(176, 26);
             this.button9.TabIndex = 21;
-            this.button9.Text = "button9";
+            this.button9.Text = "ADD_STUDENT";
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button8
             // 
@@ -191,8 +203,9 @@
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(176, 26);
             this.button8.TabIndex = 20;
-            this.button8.Text = "button8";
+            this.button8.Text = "password_del";
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button7
             // 
@@ -344,17 +357,6 @@
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(15, 230);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(176, 26);
-            this.button3.TabIndex = 27;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 

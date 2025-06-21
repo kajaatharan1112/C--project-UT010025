@@ -237,5 +237,17 @@ namespace C__project_unicom_tic
             Time_table_form time_Table_Form = new Time_table_form(ROOL_ID);
             LoadForm_1(time_Table_Form);
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            students_Form students_Form=new students_Form(ROOL_ID);
+            LoadForm_1(students_Form);
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            password_Form password_Form = new password_Form(ROOL_ID);
+            LoadForm_1(password_Form);
+        }
     }
 }

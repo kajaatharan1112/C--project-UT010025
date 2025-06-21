@@ -244,6 +244,10 @@ namespace C__project_unicom_tic.formes
             };
 
             Staf_Controlar.update_course(course);
+            student_controlar data = new student_controlar(); // Ensure this class is not static
+            string dd = "Non_Active";
+            data.update_student_status_by_course(update_id, dd);
+
 
             label6.Visible = false;
             label7.Visible = false;

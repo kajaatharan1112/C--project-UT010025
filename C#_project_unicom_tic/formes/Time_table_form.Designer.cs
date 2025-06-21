@@ -173,6 +173,7 @@
             this.button_Delete.TabIndex = 52;
             this.button_Delete.Text = "DILET";
             this.button_Delete.UseVisualStyleBackColor = true;
+            this.button_Delete.Click += new System.EventHandler(this.button_Delete_Click);
             // 
             // button_update
             // 
@@ -182,6 +183,7 @@
             this.button_update.TabIndex = 51;
             this.button_update.Text = "UPDATE";
             this.button_update.UseVisualStyleBackColor = true;
+            this.button_update.Click += new System.EventHandler(this.button_update_Click);
             // 
             // button_add
             // 

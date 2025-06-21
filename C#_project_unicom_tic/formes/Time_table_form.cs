@@ -168,13 +168,38 @@ namespace C__project_unicom_tic.formes
             if (selectedDate < today)
             {
                 label3.Text = "Please select today or a future date.";
-                button1.Visible = false; // Hide the button if the date is in the past  
+                date = selectedDate.ToShortDateString();
+
+                comboBox4.Visible= false;
+                comboBox2.Visible = false;
+                comboBox3.Visible = false;
+                label4.Visible = false;
+                label5.Visible = false;
+                label6.Visible = false;
+                button_update.Visible = false;
+                button_add.Visible = false;
+                button_Delete.Visible = false;
+                label3.Text = date;
+                vew(); // Refresh the view to show no data for past dates
+
+                // Hide the button if the date is in the past  
             }
             else
             {
                 label3.Text = selectedDate.ToShortDateString();
                 date = selectedDate.ToShortDateString();
                 button1.Visible = true;
+                comboBox4.Visible = true;
+                comboBox2.Visible = true;
+                comboBox3.Visible = true;
+                label4.Visible = true;
+                label5.Visible = true;
+                label6.Visible = true;
+                button_update.Visible = true;
+                button_add.Visible = true;
+                button_Delete.Visible = true;
+                label3.Text = date;
+                vew(); // Refresh the view to show data for the selected date
             }
 
 
@@ -194,12 +219,27 @@ namespace C__project_unicom_tic.formes
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+           
             if (e.RowIndex >= 0 && dataGridView1.Rows[e.RowIndex].Cells["Id"].Value != null)
             {
                 update_id = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["Id"].Value);
                 // Optionally display or use id_num here
-                MessageBox.Show("Selected Id: " + update_id);
+               // MessageBox.Show("Selected Id: " + update_id);
+               Time_table_modal data = Staf_Controlar.get_time_table_by_id(update_id);
+                if (data != null)
+                {
+                    comboBox1.SelectedValue = data.Corse_id;
+                    comboBox4.Text = data.Teacher;
+                    comboBox2.Text = data.Time_lap;
+                    comboBox3.Text = data.class_name;
+                    date = data.Date;
+                    monthCalendar1.SetDate(DateTime.Parse(date)); // Set the calendar to the selected date
+                    label3.Text = date; // Update the label to show the selected date
+                }
+                else
+                {
+                    MessageBox.Show("No data found for the selected ID.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         
 
@@ -227,6 +267,51 @@ namespace C__project_unicom_tic.formes
             Staf_Controlar.add_time_table(time_Table);
             vew();
 
+        }
+
+        private void button_update_Click(object sender, EventArgs e)
+        {
+            // Optional validation before object creation
+            if (comboBox1.SelectedValue == null || comboBox4.SelectedIndex == -1 ||
+                comboBox2.SelectedIndex == -1 || comboBox3.SelectedIndex == -1 || string.IsNullOrWhiteSpace(date))
+            {
+                MessageBox.Show("Please fill all fields correctly.", "Validation Failed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            Time_table_modal time_Table = new Time_table_modal
+            {
+                Id = update_id, // Ensure you set the ID for updating
+                Date = date,
+                Teacher = comboBox4.Text,
+                Corse_id = Convert.ToInt32(comboBox1.SelectedValue),
+                Time_lap = comboBox2.Text,
+                class_name = comboBox3.Text,
+                status = "Active"
+            };
+            //Staf_Controlar.add_time_table(time_Table);
+            Staf_Controlar.update_time_table(time_Table);
+            vew();
+        }
+
+        private void button_Delete_Click(object sender, EventArgs e)
+        {
+            if (update_id <= 0)
+            {
+                MessageBox.Show("Please select a valid record to delete.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            var confirmResult = MessageBox.Show("Are you sure you want to delete this time table entry?",
+                                                "Confirm Delete",
+                                                MessageBoxButtons.YesNo,
+                                                MessageBoxIcon.Question);
+
+            if (confirmResult == DialogResult.Yes)
+            {
+                Staf_Controlar.delete_time_table(update_id);
+            }
+            vew();
         }
     }
 }

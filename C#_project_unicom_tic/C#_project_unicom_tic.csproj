@@ -82,11 +82,23 @@
     <Compile Include="formes\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="formes\password_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formes\password_Form.Designer.cs">
+      <DependentUpon>password_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="formes\staf_detail_.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="formes\staf_detail_.Designer.cs">
       <DependentUpon>staf_detail_.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formes\students_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formes\students_Form.Designer.cs">
+      <DependentUpon>students_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="formes\teacher detail_form.cs">
       <SubType>Form</SubType>
@@ -128,8 +140,14 @@
     <EmbeddedResource Include="formes\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formes\password_Form.resx">
+      <DependentUpon>password_Form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formes\staf_detail_.resx">
       <DependentUpon>staf_detail_.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formes\students_Form.resx">
+      <DependentUpon>students_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formes\teacher detail_form.resx">
       <DependentUpon>teacher detail_form.cs</DependentUpon>
