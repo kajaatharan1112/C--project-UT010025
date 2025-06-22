@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="controlar\admin_controlar.cs" />
+    <Compile Include="controlar\marks__controlarClass.cs" />
     <Compile Include="controlar\staf_controlar.cs" />
     <Compile Include="controlar\student_controlar.cs" />
     <Compile Include="controlar\teacher_controlar.cs" />
@@ -87,6 +88,12 @@
     </Compile>
     <Compile Include="formes\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formes\marks_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formes\marks_Form.Designer.cs">
+      <DependentUpon>marks_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="formes\password_Form.cs">
       <SubType>Form</SubType>
@@ -148,6 +155,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formes\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formes\marks_Form.resx">
+      <DependentUpon>marks_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formes\password_Form.resx">
       <DependentUpon>password_Form.cs</DependentUpon>

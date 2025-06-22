@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace C__project_unicom_tic.controlar
 {
-    internal class teacher_controlar : student_controlar
+    internal class teacher_controlar : marks__controlarClass
     {
 
         //thecher activites
@@ -362,11 +362,13 @@ namespace C__project_unicom_tic.controlar
         //
         //
 
-        public void Add_Exam(Exam_modal data)
+
+        public void add_exam(Exam_modal data)
         {
             using (var connection = DB_connection.Get_Connection())
             {
-                string query = "INSERT INTO Exam_table (Name, Teacher_Id, Course_Id, Status) VALUES (@Name, @Teacher_Id, @Course_Id, @Status);";
+                string query = "INSERT INTO Exam_table (Name, Teacher_Id, Course_Id, Status, time_table_id) " +
+                               "VALUES (@Name, @Teacher_Id, @Course_Id, @Status, @time_table_id);";
 
                 using (SQLiteCommand cmd = new SQLiteCommand(query, connection))
                 {
@@ -374,6 +376,7 @@ namespace C__project_unicom_tic.controlar
                     cmd.Parameters.AddWithValue("@Teacher_Id", data.Teacher_Id);
                     cmd.Parameters.AddWithValue("@Course_Id", data.Corse_Id);
                     cmd.Parameters.AddWithValue("@Status", data.Status);
+                    cmd.Parameters.AddWithValue("@time_table_id", data.time_table_id);
 
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("New exam created successfully!");
@@ -382,13 +385,13 @@ namespace C__project_unicom_tic.controlar
         }
 
 
-        public List<Exam_modal> Show_Exam_Output()
+        public List<Exam_modal> show_exam_Output()
         {
             List<Exam_modal> data = new List<Exam_modal>();
 
             using (var connection = DB_connection.Get_Connection())
             {
-                string query = "SELECT * FROM Exam_table;";
+                string query = @"SELECT * FROM Exam_table;";
 
                 using (SQLiteCommand cmd = new SQLiteCommand(query, connection))
                 {
@@ -402,26 +405,30 @@ namespace C__project_unicom_tic.controlar
                                 Name = reader.GetString(1),
                                 Teacher_Id = reader.GetInt32(2),
                                 Corse_Id = reader.GetInt32(3),
-                                Status = reader.GetString(4)
+                                Status = reader.GetString(4),
+                                time_table_id = reader.GetInt32(5)
                             });
                         }
                     }
                 }
             }
-
             return data;
         }
 
 
-        public Exam_modal Show_Exam_By_Id(int exam_id)
+       
+        
+
+
+        public Exam_modal show_exam_(int exam_id_num)
         {
             using (var connection = DB_connection.Get_Connection())
             {
-                string query = "SELECT * FROM Exam_table WHERE Id = @Id;";
+                string query = @"SELECT * FROM Exam_table WHERE Id = @Id;";
 
                 using (SQLiteCommand cmd = new SQLiteCommand(query, connection))
                 {
-                    cmd.Parameters.AddWithValue("@Id", exam_id);
+                    cmd.Parameters.AddWithValue("@Id", exam_id_num);
 
                     using (SQLiteDataReader reader = cmd.ExecuteReader())
                     {
@@ -433,24 +440,40 @@ namespace C__project_unicom_tic.controlar
                                 Name = reader.GetString(1),
                                 Teacher_Id = reader.GetInt32(2),
                                 Corse_Id = reader.GetInt32(3),
-                                Status = reader.GetString(4)
+                                Status = reader.GetString(4),
+                                time_table_id = reader.GetInt32(5)
                             };
                         }
                     }
                 }
             }
-
             return new Exam_modal
             {
                 Id = 0,
                 Name = "Not Found",
                 Teacher_Id = 0,
                 Corse_Id = 0,
-                Status = "Not Found"
+                Status = "Not Found",
+                time_table_id = 0
             };
         }
 
-        public void Update_Exam(Exam_modal data)
+
+        public void delete_exam_(int exam_id_num)
+        {
+            using (var connection = DB_connection.Get_Connection())
+            {
+                string query = @"DELETE FROM Exam_table WHERE Id = @Id;";
+                using (SQLiteCommand cmd = new SQLiteCommand(query, connection))
+                {
+                    cmd.Parameters.AddWithValue("@Id", exam_id_num);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
+
+
+        public void update_exam(Exam_modal exam)
         {
             using (var connection = DB_connection.Get_Connection())
             {
@@ -458,57 +481,39 @@ namespace C__project_unicom_tic.controlar
                          SET Name = @Name, 
                              Teacher_Id = @Teacher_Id, 
                              Course_Id = @Course_Id, 
-                             Status = @Status 
-                         WHERE Id = @Id;";
+                             Status = @Status, 
+                             time_table_id = @time_table_id 
+                         WHERE Id = @Id AND Id BETWEEN 1000 AND 9999;";
 
                 using (SQLiteCommand cmd = new SQLiteCommand(query, connection))
                 {
-                    cmd.Parameters.AddWithValue("@Name", data.Name);
-                    cmd.Parameters.AddWithValue("@Teacher_Id", data.Teacher_Id);
-                    cmd.Parameters.AddWithValue("@Course_Id", data.Corse_Id);
-                    cmd.Parameters.AddWithValue("@Status", data.Status);
-                    cmd.Parameters.AddWithValue("@Id", data.Id);
+                    cmd.Parameters.AddWithValue("@Name", exam.Name);
+                    cmd.Parameters.AddWithValue("@Teacher_Id", exam.Teacher_Id);
+                    cmd.Parameters.AddWithValue("@Course_Id", exam.Corse_Id);
+                    cmd.Parameters.AddWithValue("@Status", exam.Status);
+                    cmd.Parameters.AddWithValue("@time_table_id", exam.time_table_id);
+                    cmd.Parameters.AddWithValue("@Id", exam.Id);
 
-                    int result = cmd.ExecuteNonQuery();
-
-                    if (result > 0)
-                        MessageBox.Show("Exam updated successfully!");
+                    int rowsAffected = cmd.ExecuteNonQuery();
+                    if (rowsAffected > 0)
+                    {
+                        MessageBox.Show("Exam updated successfully.");
+                    }
                     else
-                        MessageBox.Show("Update failed. Exam not found.");
+                    {
+                        MessageBox.Show("Update failed. ID may be out of valid range.");
+                    }
                 }
             }
         }
 
-
-        public void Delete_Exam(int exam_id)
+        public List<Exam_modal> get_exams_by_course(int courseId)
         {
-            using (var connection = DB_connection.Get_Connection())
-            {
-                string query = "DELETE FROM Exam_table WHERE Id = @Id;";
-
-                using (SQLiteCommand cmd = new SQLiteCommand(query, connection))
-                {
-                    cmd.Parameters.AddWithValue("@Id", exam_id);
-
-                    int result = cmd.ExecuteNonQuery();
-
-                    if (result > 0)
-                        MessageBox.Show("Exam deleted successfully!");
-                    else
-                        MessageBox.Show("Delete failed. Exam not found.");
-                }
-            }
-        }
-
-
-
-        public List<Exam_modal> Get_Exams_By_CourseId(int courseId)
-        {
-            List<Exam_modal> data = new List<Exam_modal>();
+            List<Exam_modal> exams = new List<Exam_modal>();
 
             using (var connection = DB_connection.Get_Connection())
             {
-                string query = "SELECT * FROM Exam_table WHERE Course_Id = @Course_Id;";
+                string query = @"SELECT * FROM Exam_table WHERE Course_Id = @Course_Id;";
 
                 using (SQLiteCommand cmd = new SQLiteCommand(query, connection))
                 {
@@ -518,25 +523,22 @@ namespace C__project_unicom_tic.controlar
                     {
                         while (reader.Read())
                         {
-                            data.Add(new Exam_modal
+                            exams.Add(new Exam_modal
                             {
                                 Id = reader.GetInt32(0),
                                 Name = reader.GetString(1),
                                 Teacher_Id = reader.GetInt32(2),
                                 Corse_Id = reader.GetInt32(3),
-                                Status = reader.GetString(4)
+                                Status = reader.GetString(4),
+                                time_table_id = reader.GetInt32(5)
                             });
                         }
                     }
                 }
             }
 
-            return data;
+            return exams;
         }
-
-
-
-
 
 
     }

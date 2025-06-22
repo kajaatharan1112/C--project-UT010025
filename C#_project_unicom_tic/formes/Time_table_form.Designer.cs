@@ -44,6 +44,7 @@
             this.button_Delete = new System.Windows.Forms.Button();
             this.button_update = new System.Windows.Forms.Button();
             this.button_add = new System.Windows.Forms.Button();
+            this.ADD_EXAM = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,7 +59,7 @@
             // 
             // monthCalendar1
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(13, 106);
+            this.monthCalendar1.Location = new System.Drawing.Point(13, 75);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 1;
             this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
@@ -66,7 +67,7 @@
             // label3
             // 
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label3.Location = new System.Drawing.Point(12, 293);
+            this.label3.Location = new System.Drawing.Point(12, 262);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(228, 20);
             this.label3.TabIndex = 10;
@@ -75,7 +76,7 @@
             // label1
             // 
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Location = new System.Drawing.Point(9, 313);
+            this.label1.Location = new System.Drawing.Point(9, 282);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(228, 20);
             this.label1.TabIndex = 11;
@@ -86,7 +87,7 @@
             // label2
             // 
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label2.Location = new System.Drawing.Point(12, 265);
+            this.label2.Location = new System.Drawing.Point(12, 234);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(228, 20);
             this.label2.TabIndex = 12;
@@ -96,14 +97,15 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(12, 336);
+            this.comboBox1.Location = new System.Drawing.Point(12, 305);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(225, 21);
             this.comboBox1.TabIndex = 13;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 364);
+            this.button1.Location = new System.Drawing.Point(12, 333);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(225, 23);
             this.button1.TabIndex = 14;
@@ -114,7 +116,7 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(563, 245);
+            this.comboBox2.Location = new System.Drawing.Point(563, 235);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(225, 21);
             this.comboBox2.TabIndex = 16;
@@ -122,7 +124,7 @@
             // label4
             // 
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label4.Location = new System.Drawing.Point(560, 222);
+            this.label4.Location = new System.Drawing.Point(560, 212);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(228, 20);
             this.label4.TabIndex = 15;
@@ -132,7 +134,7 @@
             // comboBox3
             // 
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(563, 292);
+            this.comboBox3.Location = new System.Drawing.Point(563, 282);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(225, 21);
             this.comboBox3.TabIndex = 18;
@@ -140,7 +142,7 @@
             // label5
             // 
             this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label5.Location = new System.Drawing.Point(560, 269);
+            this.label5.Location = new System.Drawing.Point(560, 259);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(228, 20);
             this.label5.TabIndex = 17;
@@ -150,7 +152,7 @@
             // comboBox4
             // 
             this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(563, 203);
+            this.comboBox4.Location = new System.Drawing.Point(563, 193);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(225, 21);
             this.comboBox4.TabIndex = 22;
@@ -158,7 +160,7 @@
             // label6
             // 
             this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label6.Location = new System.Drawing.Point(560, 180);
+            this.label6.Location = new System.Drawing.Point(560, 170);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(228, 20);
             this.label6.TabIndex = 21;
@@ -167,7 +169,7 @@
             // 
             // button_Delete
             // 
-            this.button_Delete.Location = new System.Drawing.Point(720, 319);
+            this.button_Delete.Location = new System.Drawing.Point(720, 325);
             this.button_Delete.Name = "button_Delete";
             this.button_Delete.Size = new System.Drawing.Size(75, 23);
             this.button_Delete.TabIndex = 52;
@@ -177,7 +179,7 @@
             // 
             // button_update
             // 
-            this.button_update.Location = new System.Drawing.Point(639, 319);
+            this.button_update.Location = new System.Drawing.Point(639, 325);
             this.button_update.Name = "button_update";
             this.button_update.Size = new System.Drawing.Size(75, 23);
             this.button_update.TabIndex = 51;
@@ -187,19 +189,30 @@
             // 
             // button_add
             // 
-            this.button_add.Location = new System.Drawing.Point(558, 319);
+            this.button_add.Location = new System.Drawing.Point(558, 325);
             this.button_add.Name = "button_add";
             this.button_add.Size = new System.Drawing.Size(75, 23);
             this.button_add.TabIndex = 50;
-            this.button_add.Text = "ADD";
+            this.button_add.Text = "ADD_class";
             this.button_add.UseVisualStyleBackColor = true;
             this.button_add.Click += new System.EventHandler(this.button_add_Click);
+            // 
+            // ADD_EXAM
+            // 
+            this.ADD_EXAM.Location = new System.Drawing.Point(563, 354);
+            this.ADD_EXAM.Name = "ADD_EXAM";
+            this.ADD_EXAM.Size = new System.Drawing.Size(225, 23);
+            this.ADD_EXAM.TabIndex = 53;
+            this.ADD_EXAM.Text = "ADD_EXAM";
+            this.ADD_EXAM.UseVisualStyleBackColor = true;
+            this.ADD_EXAM.Click += new System.EventHandler(this.ADD_EXAM_Click);
             // 
             // Time_table_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 700);
+            this.Controls.Add(this.ADD_EXAM);
             this.Controls.Add(this.button_Delete);
             this.Controls.Add(this.button_update);
             this.Controls.Add(this.button_add);
@@ -243,5 +256,6 @@
         private System.Windows.Forms.Button button_Delete;
         private System.Windows.Forms.Button button_update;
         private System.Windows.Forms.Button button_add;
+        private System.Windows.Forms.Button ADD_EXAM;
     }
 }

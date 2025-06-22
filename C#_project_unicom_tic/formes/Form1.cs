@@ -99,33 +99,50 @@ namespace C__project_unicom_tic
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-           
 
-            List<user_modal>data= new List<user_modal>();
-            data = User_Controlar_.show_user_Output();
+
+            List<user_modal> data = User_Controlar_.show_user_Output();
+
+            if (data == null || data.Count == 0)
+            {
+                MessageBox.Show("you are tha first user", "wellcome", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                user_modal data10 = new user_modal();
+                data10.User_id = 100049;
+                data10.Name = "admin_0920";
+                data10.Password = "Admin@123";
+                User_Controlar_.add_user(data10);
+                label1.Text = "admin_0920";
+                label2.Text = "Admin@123";
+
+                return;
+            }
+
+            bool isValid = false;
+            label2.Text = "prodram_defalt_password_Admin@123";
+
             foreach (user_modal item in data)
             {
                 if (item.Name == textBox1.Text && item.Password == textBox2.Text)
                 {
-                    int rool_id=item.User_id;
-                    label4.Text= Convert.ToString(rool_id);
+                    int rool_id = item.User_id;
+                    label4.Text = rool_id.ToString();
                     ROOL_ID = rool_id;
-                    //MessageBox.Show(Convert.ToString(ROOL_ID), "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    isValid = true;
+                    // Hide login controls
+                    textBox1.Visible = false;
+                    textBox2.Visible = false;
+                    label1.Visible = false;
+                    label2.Visible = false;
+                    button2.Visible = false;
+                    User_name.Visible = false;
+                    Password.Visible = false;
+                    pictureBox2.Visible = false;
 
-
-
-                    if (rool_id >=100000 && rool_id<=100050)
+                    if (rool_id >= 100000 && rool_id <= 100050)
                     {
-                        //--------------------------------
-                        textBox1.Visible = false;
-                        textBox2.Visible = false;
-                        label1.Visible = false;
-                        label2.Visible = false;
-                        button2.Visible = false;
-                        User_name.Visible = false;
-                        Password.Visible = false;
-                        pictureBox2.Visible = false;
-                        //--------------------------------
+                       
+
+                        // Show dashboard/admin controls
                         pictureBox1.Visible = true;
                         button3.Visible = true;
                         button6.Visible = true;
@@ -138,23 +155,68 @@ namespace C__project_unicom_tic
                         button13.Visible = true;
                         button14.Visible = true;
                         button15.Visible = true;
-                        //------------------------------
+                    }
+                    else if (rool_id >= 100056 && rool_id <= 100249999)
+                    {
+                        // Show dashboard/admin controls
+                        pictureBox1.Visible = true;
+                        button3.Visible = true;
+                        button6.Visible = true;
+                        button7.Visible = true;
+                        button8.Visible = true;
+                        button9.Visible = false;
+                        button10.Visible = true;
+                        button11.Visible = true;
+                        button12.Visible = true;
+                        button13.Visible = true;
+                        button14.Visible = true;
+                        button15.Visible = false;
+                    }
+                    else if  (rool_id >= 250000 && rool_id <= 500000)
+                    {
+                        // Show dashboard/admin controls
+                        pictureBox1.Visible = true;
+                        button3.Visible = false;
+                        button6.Visible = true;
+                        button7.Visible = true;
+                        button8.Visible = true;
+                        button9.Visible = false;
+                        button10.Visible = true;
+                        button11.Visible = false;
+                        button12.Visible = false;
+                        button13.Visible = true;
+                        button14.Visible = false;
+                        button15.Visible = false;
+                    }
+                    else if (rool_id >= 5005000 && rool_id <= 999999)
+                    {
+                        // Show dashboard/admin controls
+                        pictureBox1.Visible = true;
+                        button3.Visible = false;
+                        button6.Visible = true;
+                        button7.Visible = true;
+                        button8.Visible = true;
+                        button9.Visible = true;
+                        button10.Visible = true;
+                        button11.Visible = false;
+                        button12.Visible = false;
+                        button13.Visible = false;
+                        button14.Visible = false;
+                        button15.Visible = false;
                     }
 
-
-
-
-
-
-
-                }
-                else
-                {
-                    label1.Text = "invalide input";
+                        break; // Stop loop after successful login
                 }
             }
-           
+
+            if (!isValid)
+            {
+                label1.Text = "Invalid input";
+            }
+
         }
+           
+        
        
 
         private void panel4_Paint_1(object sender, PaintEventArgs e)
@@ -254,6 +316,12 @@ namespace C__project_unicom_tic
         {
             exam_Form exam_Form = new exam_Form(ROOL_ID);
             LoadForm_1(exam_Form);
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            marks_Form Marks_Form=new marks_Form(ROOL_ID);
+            LoadForm_1(Marks_Form);
         }
     }
 }

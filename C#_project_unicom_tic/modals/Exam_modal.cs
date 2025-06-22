@@ -14,7 +14,8 @@ namespace C__project_unicom_tic.modals
         public int Teacher_Id { get; set; }
         public int Corse_Id {  get; set; }
         public string Status {  get; set; }
+        public int time_table_id { get; set; }  
 
-        
+
     }
 }

@@ -25,6 +25,14 @@ namespace C__project_unicom_tic.formes
             Staf_Controlar = new staf_controlar();
             id_=id;
 
+            textBox_user_name.Text = "";
+            textBox_user_name.Visible = false;
+            button1.Visible = false;
+            label_user_name.Visible = false;
+            label4.Visible = false;
+
+
+
 
             List<Corse_modal> data = Staf_Controlar.show_course_Output();
             List<Corse_modal> data2 = new List<Corse_modal>();
@@ -181,6 +189,15 @@ namespace C__project_unicom_tic.formes
                     label7.Visible = false;
                     label10.Visible = false;
                     label11.Visible = false;
+
+
+                    textBox_user_name.Text = "";
+                    textBox_user_name.Visible = true;
+                    button1.Visible = true;
+                    label_user_name.Visible = true;
+                    label4.Visible = true;
+
+
                     MessageBox.Show("Student added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 catch (FormatException)
@@ -383,6 +400,11 @@ namespace C__project_unicom_tic.formes
                 comboBox1.DataSource = null;
                 MessageBox.Show("No active teachers available.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+
+        private void label_show_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

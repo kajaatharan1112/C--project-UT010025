@@ -154,6 +154,7 @@
             this.label_show.Size = new System.Drawing.Size(341, 167);
             this.label_show.TabIndex = 63;
             this.label_show.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_show.Click += new System.EventHandler(this.label_show_Click);
             // 
             // label_nic_number
             // 

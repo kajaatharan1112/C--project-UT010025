@@ -225,21 +225,65 @@ namespace C__project_unicom_tic.formes
                 update_id = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["Id"].Value);
                 // Optionally display or use id_num here
                // MessageBox.Show("Selected Id: " + update_id);
-               Time_table_modal data = Staf_Controlar.get_time_table_by_id(update_id);
-                if (data != null)
+               List<Exam_modal>exam_data=Staf_Controlar.show_exam_Output();
+                List<Exam_modal> exam_data2 = new List<Exam_modal>();
+                foreach (var item in exam_data)
                 {
-                    comboBox1.SelectedValue = data.Corse_id;
-                    comboBox4.Text = data.Teacher;
-                    comboBox2.Text = data.Time_lap;
-                    comboBox3.Text = data.class_name;
-                    date = data.Date;
-                    monthCalendar1.SetDate(DateTime.Parse(date)); // Set the calendar to the selected date
-                    label3.Text = date; // Update the label to show the selected date
+                    if (item.time_table_id == update_id)
+                    {
+                        exam_data2.Add(item);
+                    }
                 }
+                if (exam_data2.Count > 0)
+                {
+                    comboBox4.Visible = false;
+                    comboBox2.Visible = false;
+                    comboBox3.Visible = false;
+                    label4.Visible = false;
+                    label5.Visible = false;
+                    label6.Visible = false;
+                    button_update.Visible = false;
+                    button_add.Visible = false;
+                    button_Delete.Visible = false;
+                    ADD_EXAM.Visible = false;
+                    label3.Text = date;
+                    vew();
+                    MessageBox.Show("This time table is already used in an exam.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+                // Retrieve the data for the selected ID
+
                 else
                 {
-                    MessageBox.Show("No data found for the selected ID.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    comboBox4.Visible = true;
+                    comboBox2.Visible = true;
+                    comboBox3.Visible = true;
+                    label4.Visible = true;
+                    label5.Visible = true;
+                    label6.Visible = true;
+                    button_update.Visible = true;
+                    button_add.Visible = true;
+                    button_Delete.Visible = true;
+                    ADD_EXAM.Visible = true;
+
+
+                    Time_table_modal data = Staf_Controlar.get_time_table_by_id(update_id);
+                    if (data != null)
+                    {
+                        comboBox1.SelectedValue = data.Corse_id;
+                        comboBox4.Text = data.Teacher;
+                        comboBox2.Text = data.Time_lap;
+                        comboBox3.Text = data.class_name;
+                        date = data.Date;
+                        monthCalendar1.SetDate(DateTime.Parse(date)); // Set the calendar to the selected date
+                        label3.Text = date; // Update the label to show the selected date
+                    }
+                    else
+                    {
+                        MessageBox.Show("No data found for the selected ID.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
+                
             }
         
 
@@ -248,6 +292,7 @@ namespace C__project_unicom_tic.formes
         private void button_add_Click(object sender, EventArgs e)
         {
             // Optional validation before object creation
+            int ggg = 0;
             if (comboBox1.SelectedValue == null || comboBox4.SelectedIndex == -1 ||
                 comboBox2.SelectedIndex == -1 || comboBox3.SelectedIndex == -1 || string.IsNullOrWhiteSpace(date))
             {
@@ -264,8 +309,25 @@ namespace C__project_unicom_tic.formes
                 class_name = comboBox3.Text,
                 status = "Active"
             };
-            Staf_Controlar.add_time_table(time_Table);
-            vew();
+            List<Time_table_modal> data = Staf_Controlar.show_time_table_Output();
+            Time_table_modal data1=new Time_table_modal();
+            foreach (Time_table_modal t in data)
+            {
+                if (t.Corse_id==time_Table.Corse_id && t.Teacher==time_Table.Teacher && t.Date==time_Table.Date && t.Time_lap==time_Table.Time_lap && t.class_name==time_Table.class_name)
+                {
+                    MessageBox.Show("allrady taken time table.", "Validation Failed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    ggg = 111;
+                    return;
+                }
+            }
+            if (ggg == 0)
+            {
+                Staf_Controlar.add_time_table(time_Table);
+                vew();
+            }
+
+
+            
 
         }
 
@@ -312,6 +374,55 @@ namespace C__project_unicom_tic.formes
                 Staf_Controlar.delete_time_table(update_id);
             }
             vew();
+        }
+
+        private void ADD_EXAM_Click(object sender, EventArgs e)
+        {
+            // Optional validation before object creation
+            if (comboBox1.SelectedValue == null || comboBox4.SelectedIndex == -1 ||
+                comboBox2.SelectedIndex == -1 || comboBox3.SelectedIndex == -1 || string.IsNullOrWhiteSpace(date))
+            {
+                MessageBox.Show("Please fill all fields correctly.", "Validation Failed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            Time_table_modal time_Table = new Time_table_modal
+            {
+                Date = date,
+                Teacher = comboBox4.Text,
+                Corse_id = Convert.ToInt32(comboBox1.SelectedValue),
+                Time_lap = comboBox2.Text,
+                class_name = comboBox3.Text,
+                status = "Active"
+            };
+            Staf_Controlar.add_time_table(time_Table);
+
+            List<Time_table_modal> timeTableData = Staf_Controlar.show_time_table_Output();
+            Time_table_modal lastEntry = timeTableData.LastOrDefault();
+            if (lastEntry == null)
+            {
+                MessageBox.Show("No time table entry found to create an exam.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            Exam_modal exam = new Exam_modal();
+            exam.Name = comboBox4.Text + " EXAM";
+            exam.Teacher_Id= Convert.ToInt32(comboBox4.SelectedValue);
+            exam.Corse_Id = Convert.ToInt32(comboBox1.SelectedValue);
+            exam.Status = "Active";
+            exam.time_table_id = lastEntry.Id; // Use the last entry's ID as the time table ID
+
+            Staf_Controlar.add_exam(exam); // Assuming you have a method to add an exam
+
+            // Assuming you want to use the teacher's name as the exam name
+
+
+            vew();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

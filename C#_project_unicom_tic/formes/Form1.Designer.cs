@@ -227,8 +227,9 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(176, 26);
             this.button6.TabIndex = 18;
-            this.button6.Text = "button6";
+            this.button6.Text = "marks";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button13
             // 

@@ -102,6 +102,8 @@ namespace C__project_unicom_tic.data
                         Teacher_Id INTEGER NOT NULL,
                         Course_Id INTEGER NOT NULL,
                         Status TEXT NOT NULL,
+                        time_table_id INTEGER NOT NULL,
+                        Foreign Key (time_table_id) REFERENCES Time_table(Id),
                         FOREIGN KEY (Course_Id) REFERENCES Course_table(Id),
                         FOREIGN KEY (Teacher_Id) REFERENCES Teacher_table(Id),
                         CHECK (Id > 1000 AND Id < 9999)
@@ -111,6 +113,7 @@ namespace C__project_unicom_tic.data
                         Student_Id INTEGER NOT NULL,
                         Exam_Id INTEGER NOT NULL,
                         Exam_marks INTEGER NOT NULL, 
+                        student_name TEXT NOT NULL,
                         PRIMARY KEY (Student_Id, Exam_Id),
                         FOREIGN KEY (Student_Id) REFERENCES Student_table(Id),
                         FOREIGN KEY (Exam_Id) REFERENCES Exam_table(Id)

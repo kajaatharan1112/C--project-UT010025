@@ -10,7 +10,9 @@ namespace C__project_unicom_tic.modals
     {
         public int student_ID {  get; set; }
         public int Exam_Id {  get; set; }
+        public string student_Name { get; set; }    
         public int exam_marks {  get; set; }
+        public string Exam_Name { get; set; }
 
     }
 }
