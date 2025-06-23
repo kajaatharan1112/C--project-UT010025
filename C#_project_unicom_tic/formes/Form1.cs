@@ -110,8 +110,8 @@ namespace C__project_unicom_tic
                 data10.Name = "admin_0920";
                 data10.Password = "Admin@123";
                 User_Controlar_.add_user(data10);
-                label1.Text = "admin_0920";
-                label2.Text = "Admin@123";
+                label2.Text = "admin_0920";
+                label1.Text = "Admin@123";
 
                 return;
             }

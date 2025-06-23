@@ -125,8 +125,8 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.ImageLocation = "C:\\Users\\UT010025\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\im" +
-    "age_folder\\box logo.jpg";
+            this.pictureBox1.ImageLocation = "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder (2)\\C--project-UT010025\\C#_project_uni" +
+    "com_tic\\image_folder\\box logo.jpg";
             this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(194, 202);
@@ -337,8 +337,8 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.ImageLocation = "C:\\Users\\UT010025\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\im" +
-    "age_folder\\long logo.png";
+            this.pictureBox2.ImageLocation = "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder (2)\\C--project-UT010025\\C#_project_uni" +
+    "com_tic\\image_folder\\long logo.png";
             this.pictureBox2.Location = new System.Drawing.Point(2, 3);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(600, 400);
