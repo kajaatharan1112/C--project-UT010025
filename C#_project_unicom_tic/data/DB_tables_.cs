@@ -110,10 +110,10 @@ namespace C__project_unicom_tic.data
                     );
 
                     CREATE TABLE IF NOT EXISTS Marks_table (
-                        Student_Id INTEGER NOT NULL,
+                        Student_Id INTEGER NOT NULL,   
                         Exam_Id INTEGER NOT NULL,
                         Exam_marks INTEGER NOT NULL, 
-                        student_name TEXT NOT NULL,
+                        student_name TEXT NOT NULL,  
                         PRIMARY KEY (Student_Id, Exam_Id),
                         FOREIGN KEY (Student_Id) REFERENCES Student_table(Id),
                         FOREIGN KEY (Exam_Id) REFERENCES Exam_table(Id)

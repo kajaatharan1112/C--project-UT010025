@@ -20,7 +20,10 @@ namespace C__project_unicom_tic.formes
         staf_controlar Staf_Controlar;
         public teacher_detail_form(int id_)
         {
-            Staf_Controlar=new staf_controlar();
+           
+
+
+                Staf_Controlar =new staf_controlar();
             InitializeComponent();
             id = id_;
             List<string> combo = new List<string>
@@ -44,6 +47,15 @@ namespace C__project_unicom_tic.formes
             label9.Visible = false;
             label10.Visible = false;
             label11.Visible = false;
+
+            if (id_ >= 250000 && id_ <= 500000)
+            {
+                button_add.Visible = false;
+                button_Delete.Visible = false;
+                button_update.Visible = false;
+                //staf_detail.Visible = false;
+                button2.Visible = false;
+            }
 
         }
         private void vew(int dd)
@@ -386,6 +398,11 @@ namespace C__project_unicom_tic.formes
             button_Delete.Visible = false;
             vew(1);
             clear();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
         }
     }
     

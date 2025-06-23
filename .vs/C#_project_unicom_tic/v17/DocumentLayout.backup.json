@@ -3,15 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\c#_project_unicom_tic\\formes\\marks_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|solutionrelative:c#_project_unicom_tic\\formes\\marks_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|c:\\users\\kajaa\\onedrive\\desktop\\new folder\\c--project-ut010025\\c#_project_unicom_tic\\formes\\marks_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|solutionrelative:c#_project_unicom_tic\\formes\\marks_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|c:\\users\\kajaa\\onedrive\\desktop\\new folder\\c--project-ut010025\\c#_project_unicom_tic\\formes\\marks_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|solutionrelative:c#_project_unicom_tic\\formes\\marks_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|c:\\users\\kajaa\\onedrive\\desktop\\new folder\\c--project-ut010025\\c#_project_unicom_tic\\formes\\time_table_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\c#_project_unicom_tic\\formes\\time_table_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|solutionrelative:c#_project_unicom_tic\\formes\\time_table_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -19,32 +19,16 @@
       "RelativeMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|solutionrelative:c#_project_unicom_tic\\controlar\\marks__controlarclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\c#_project_unicom_tic\\data\\db_tables_.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|solutionrelative:c#_project_unicom_tic\\data\\db_tables_.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|c:\\users\\kajaa\\onedrive\\desktop\\new folder\\c--project-ut010025\\c#_project_unicom_tic\\modals\\marks_modal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|solutionrelative:c#_project_unicom_tic\\modals\\marks_modal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|c:\\users\\kajaa\\onedrive\\desktop\\new folder\\c--project-ut010025\\c#_project_unicom_tic\\controlar\\student_controlar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|solutionrelative:c#_project_unicom_tic\\controlar\\student_controlar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|c:\\users\\kajaa\\onedrive\\desktop\\new folder\\c--project-ut010025\\c#_project_unicom_tic\\formes\\exam_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|solutionrelative:c#_project_unicom_tic\\formes\\exam_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|c:\\users\\kajaa\\onedrive\\desktop\\new folder\\c--project-ut010025\\c#_project_unicom_tic\\controlar\\teacher_controlar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|solutionrelative:c#_project_unicom_tic\\controlar\\teacher_controlar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\c#_project_unicom_tic\\formes\\students_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|solutionrelative:c#_project_unicom_tic\\formes\\students_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|c:\\users\\kajaa\\onedrive\\desktop\\new folder\\c--project-ut010025\\c#_project_unicom_tic\\formes\\students_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|solutionrelative:c#_project_unicom_tic\\formes\\students_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|c:\\users\\kajaa\\onedrive\\desktop\\new folder\\c--project-ut010025\\c#_project_unicom_tic\\formes\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|solutionrelative:c#_project_unicom_tic\\formes\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|c:\\users\\kajaa\\onedrive\\desktop\\new folder\\c--project-ut010025\\c#_project_unicom_tic\\controlar\\staf_controlar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|solutionrelative:c#_project_unicom_tic\\controlar\\staf_controlar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|c:\\users\\kajaa\\onedrive\\desktop\\new folder\\c--project-ut010025\\c#_project_unicom_tic\\formes\\exam_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|solutionrelative:c#_project_unicom_tic\\formes\\exam_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|c:\\users\\kajaa\\onedrive\\desktop\\new folder\\c--project-ut010025\\c#_project_unicom_tic\\formes\\staf_detail_.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -55,24 +39,44 @@
       "RelativeMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|solutionrelative:c#_project_unicom_tic\\formes\\staf_detail_.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|c:\\users\\kajaa\\onedrive\\desktop\\new folder\\c--project-ut010025\\c#_project_unicom_tic\\modals\\marks_modal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|solutionrelative:c#_project_unicom_tic\\modals\\marks_modal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|c:\\users\\kajaa\\onedrive\\desktop\\new folder\\c--project-ut010025\\c#_project_unicom_tic\\formes\\teacher detail_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|solutionrelative:c#_project_unicom_tic\\formes\\teacher detail_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|c:\\users\\kajaa\\onedrive\\desktop\\new folder\\c--project-ut010025\\c#_project_unicom_tic\\modals\\time_table_modal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|solutionrelative:c#_project_unicom_tic\\modals\\time_table_modal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|c:\\users\\kajaa\\onedrive\\desktop\\new folder\\c--project-ut010025\\c#_project_unicom_tic\\controlar\\admin_controlar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|solutionrelative:c#_project_unicom_tic\\controlar\\admin_controlar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|c:\\users\\kajaa\\onedrive\\desktop\\new folder\\c--project-ut010025\\c#_project_unicom_tic\\formes\\time_table_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\c#_project_unicom_tic\\formes\\time_table_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|solutionrelative:c#_project_unicom_tic\\formes\\time_table_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\c#_project_unicom_tic\\formes\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\c#_project_unicom_tic\\formes\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|solutionrelative:c#_project_unicom_tic\\formes\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|c:\\users\\kajaa\\onedrive\\desktop\\new folder\\c--project-ut010025\\c#_project_unicom_tic\\formes\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|solutionrelative:c#_project_unicom_tic\\formes\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\c#_project_unicom_tic\\formes\\students_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|solutionrelative:c#_project_unicom_tic\\formes\\students_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|c:\\users\\kajaa\\onedrive\\desktop\\new folder\\c--project-ut010025\\c#_project_unicom_tic\\formes\\teacher detail_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|solutionrelative:c#_project_unicom_tic\\formes\\teacher detail_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|c:\\users\\kajaa\\onedrive\\desktop\\new folder\\c--project-ut010025\\c#_project_unicom_tic\\data\\db_tables_.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|solutionrelative:c#_project_unicom_tic\\data\\db_tables_.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\c#_project_unicom_tic\\formes\\students_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|solutionrelative:c#_project_unicom_tic\\formes\\students_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\c#_project_unicom_tic\\controlar\\staf_controlar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|solutionrelative:c#_project_unicom_tic\\controlar\\staf_controlar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\c#_project_unicom_tic\\controlar\\admin_controlar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F592636-502E-42C2-90AB-A5241BA481A7}|C#_project_unicom_tic\\C#_project_unicom_tic.csproj|solutionrelative:c#_project_unicom_tic\\controlar\\admin_controlar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -82,11 +86,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 16,
               "Title": "students_Form.cs",
               "DocumentMoniker": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\formes\\students_Form.cs",
               "RelativeDocumentMoniker": "C#_project_unicom_tic\\formes\\students_Form.cs",
@@ -106,7 +110,7 @@
               "RelativeDocumentMoniker": "C#_project_unicom_tic\\formes\\Time_table_form.cs",
               "ToolTip": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\formes\\Time_table_form.cs",
               "RelativeToolTip": "C#_project_unicom_tic\\formes\\Time_table_form.cs",
-              "ViewState": "AgIAAHkAAAAAAAAAAAAmwI4AAABEAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAuwEQAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-22T12:34:39.036Z",
               "IsPinned": true,
@@ -114,13 +118,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "marks_Form.cs",
               "DocumentMoniker": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\formes\\marks_Form.cs",
               "RelativeDocumentMoniker": "C#_project_unicom_tic\\formes\\marks_Form.cs",
               "ToolTip": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\formes\\marks_Form.cs",
               "RelativeToolTip": "C#_project_unicom_tic\\formes\\marks_Form.cs",
-              "ViewState": "AgIAAM0AAAAAAAAAAAD4v8wAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAADEAAAAAAAAAAAAgwEEAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-22T13:14:42.298Z",
               "IsPinned": true,
@@ -128,26 +132,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "marks_Form.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\formes\\marks_Form.cs",
-              "RelativeDocumentMoniker": "C#_project_unicom_tic\\formes\\marks_Form.cs",
-              "ToolTip": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\formes\\marks_Form.cs [Design]",
-              "RelativeToolTip": "C#_project_unicom_tic\\formes\\marks_Form.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-22T13:14:02.51Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\formes\\Form1.cs",
               "RelativeDocumentMoniker": "C#_project_unicom_tic\\formes\\Form1.cs",
               "ToolTip": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\formes\\Form1.cs",
               "RelativeToolTip": "C#_project_unicom_tic\\formes\\Form1.cs",
-              "ViewState": "AgIAANEAAAAAAAAAAAAIwNoAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAALMAAAAAAAAAAAAIwMcAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-22T13:11:39.481Z",
               "IsPinned": true,
@@ -155,21 +146,83 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Time_table_modal.cs",
-              "DocumentMoniker": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\modals\\Time_table_modal.cs",
-              "RelativeDocumentMoniker": "C#_project_unicom_tic\\modals\\Time_table_modal.cs",
-              "ToolTip": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\modals\\Time_table_modal.cs",
-              "RelativeToolTip": "C#_project_unicom_tic\\modals\\Time_table_modal.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAeAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "marks_modal.cs",
+              "DocumentMoniker": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\modals\\marks_modal.cs",
+              "RelativeDocumentMoniker": "C#_project_unicom_tic\\modals\\marks_modal.cs",
+              "ToolTip": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\modals\\marks_modal.cs",
+              "RelativeToolTip": "C#_project_unicom_tic\\modals\\marks_modal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-22T13:10:14.768Z",
-              "IsPinned": true,
+              "WhenOpened": "2025-06-23T02:57:58.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "staf_detail_.cs",
+              "DocumentMoniker": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\formes\\staf_detail_.cs",
+              "RelativeDocumentMoniker": "C#_project_unicom_tic\\formes\\staf_detail_.cs",
+              "ToolTip": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\formes\\staf_detail_.cs",
+              "RelativeToolTip": "C#_project_unicom_tic\\formes\\staf_detail_.cs",
+              "ViewState": "AgIAAAQBAAAAAAAAAAAtwA8BAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T02:47:45.091Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "staf_detail_.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\formes\\staf_detail_.cs",
+              "RelativeDocumentMoniker": "C#_project_unicom_tic\\formes\\staf_detail_.cs",
+              "ToolTip": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\formes\\staf_detail_.cs [Design]",
+              "RelativeToolTip": "C#_project_unicom_tic\\formes\\staf_detail_.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T02:47:38.788Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "exam_Form.cs",
+              "DocumentMoniker": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\formes\\exam_Form.cs",
+              "RelativeDocumentMoniker": "C#_project_unicom_tic\\formes\\exam_Form.cs",
+              "ToolTip": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\formes\\exam_Form.cs",
+              "RelativeToolTip": "C#_project_unicom_tic\\formes\\exam_Form.cs",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAtwI0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T02:42:20.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "exam_Form.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\formes\\exam_Form.cs",
+              "RelativeDocumentMoniker": "C#_project_unicom_tic\\formes\\exam_Form.cs",
+              "ToolTip": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\formes\\exam_Form.cs [Design]",
+              "RelativeToolTip": "C#_project_unicom_tic\\formes\\exam_Form.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T02:34:28.919Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "teacher detail_form.cs",
+              "DocumentMoniker": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\formes\\teacher detail_form.cs",
+              "RelativeDocumentMoniker": "C#_project_unicom_tic\\formes\\teacher detail_form.cs",
+              "ToolTip": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\formes\\teacher detail_form.cs",
+              "RelativeToolTip": "C#_project_unicom_tic\\formes\\teacher detail_form.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAgwDkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T02:28:25.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "students_Form.cs [Design]",
               "DocumentMoniker": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\formes\\students_Form.cs",
               "RelativeDocumentMoniker": "C#_project_unicom_tic\\formes\\students_Form.cs",
@@ -181,32 +234,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "staf_detail_.cs",
-              "DocumentMoniker": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\formes\\staf_detail_.cs",
-              "RelativeDocumentMoniker": "C#_project_unicom_tic\\formes\\staf_detail_.cs",
-              "ToolTip": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\formes\\staf_detail_.cs",
-              "RelativeToolTip": "C#_project_unicom_tic\\formes\\staf_detail_.cs",
-              "ViewState": "AgIAAC8BAAAAAAAAAAAQwEABAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-22T18:09:06.798Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "staf_detail_.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\formes\\staf_detail_.cs",
-              "RelativeDocumentMoniker": "C#_project_unicom_tic\\formes\\staf_detail_.cs",
-              "ToolTip": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\formes\\staf_detail_.cs [Design]",
-              "RelativeToolTip": "C#_project_unicom_tic\\formes\\staf_detail_.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-22T18:09:01.759Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 17,
               "Title": "staf_controlar.cs",
               "DocumentMoniker": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\controlar\\staf_controlar.cs",
               "RelativeDocumentMoniker": "C#_project_unicom_tic\\controlar\\staf_controlar.cs",
@@ -214,12 +242,11 @@
               "RelativeToolTip": "C#_project_unicom_tic\\controlar\\staf_controlar.cs",
               "ViewState": "AgIAAD4BAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-22T17:41:44.804Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-22T17:41:44.804Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "admin_controlar.cs",
               "DocumentMoniker": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\controlar\\admin_controlar.cs",
               "RelativeDocumentMoniker": "C#_project_unicom_tic\\controlar\\admin_controlar.cs",
@@ -227,20 +254,7 @@
               "RelativeToolTip": "C#_project_unicom_tic\\controlar\\admin_controlar.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-22T14:27:15.19Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Time_table_form.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\formes\\Time_table_form.cs",
-              "RelativeDocumentMoniker": "C#_project_unicom_tic\\formes\\Time_table_form.cs",
-              "ToolTip": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\formes\\Time_table_form.cs [Design]",
-              "RelativeToolTip": "C#_project_unicom_tic\\formes\\Time_table_form.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-22T12:33:06.439Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-06-22T14:27:15.19Z"
             }
           ]
         }
@@ -250,47 +264,13 @@
       "Orientation": 0,
       "VerticalTabListWidth": 256,
       "FloatingWindowState": {
-        "Id": "d15f1dcf-ff47-43ea-aa73-443234887e88",
+        "Id": "ef43dc00-ee8b-4315-9cc0-6c9a0ce5c931",
         "Display": 1,
-        "X": 107,
-        "Y": -1,
-        "Width": 1047,
-        "Height": 594,
+        "X": -5,
+        "Y": 49,
+        "Width": 1049,
+        "Height": 595,
         "WindowState": 2
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DB_tables_.cs",
-              "DocumentMoniker": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\data\\DB_tables_.cs",
-              "RelativeDocumentMoniker": "C#_project_unicom_tic\\data\\DB_tables_.cs",
-              "ToolTip": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\data\\DB_tables_.cs",
-              "RelativeToolTip": "C#_project_unicom_tic\\data\\DB_tables_.cs",
-              "ViewState": "AgIAAF8AAAAAAAAAAAAmwHoAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T05:25:44.508Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "19e2c9af-0a50-4fea-917a-16995b801194",
-        "Display": 1,
-        "X": 70,
-        "Y": 35,
-        "Width": 1047,
-        "Height": 594,
-        "WindowState": 0
       },
       "DocumentGroups": [
         {
@@ -299,76 +279,17 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\formes\\Form1.cs",
-              "RelativeDocumentMoniker": "C#_project_unicom_tic\\formes\\Form1.cs",
-              "ToolTip": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\formes\\Form1.cs [Design]",
-              "RelativeToolTip": "C#_project_unicom_tic\\formes\\Form1.cs [Design]",
+              "DocumentIndex": 15,
+              "Title": "DB_tables_.cs",
+              "DocumentMoniker": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\data\\DB_tables_.cs",
+              "RelativeDocumentMoniker": "C#_project_unicom_tic\\data\\DB_tables_.cs",
+              "ToolTip": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\data\\DB_tables_.cs",
+              "RelativeToolTip": "C#_project_unicom_tic\\data\\DB_tables_.cs",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T06:18:36.373Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "teacher_controlar.cs",
-              "DocumentMoniker": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\controlar\\teacher_controlar.cs",
-              "RelativeDocumentMoniker": "C#_project_unicom_tic\\controlar\\teacher_controlar.cs",
-              "ToolTip": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\controlar\\teacher_controlar.cs",
-              "RelativeToolTip": "C#_project_unicom_tic\\controlar\\teacher_controlar.cs",
-              "ViewState": "AgIAAI4BAAAAAAAAAAAgwAwAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-22T13:04:59.299Z",
+              "WhenOpened": "2025-06-23T02:04:10.926Z",
               "EditorCaption": ""
             },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "student_controlar.cs",
-              "DocumentMoniker": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\controlar\\student_controlar.cs",
-              "RelativeDocumentMoniker": "C#_project_unicom_tic\\controlar\\student_controlar.cs",
-              "ToolTip": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\controlar\\student_controlar.cs",
-              "RelativeToolTip": "C#_project_unicom_tic\\controlar\\student_controlar.cs",
-              "ViewState": "AgIAAJMAAAAAAAAAAAAmwK0AAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-22T17:01:28.036Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "marks_modal.cs",
-              "DocumentMoniker": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\modals\\marks_modal.cs",
-              "RelativeDocumentMoniker": "C#_project_unicom_tic\\modals\\marks_modal.cs",
-              "ToolTip": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\modals\\marks_modal.cs",
-              "RelativeToolTip": "C#_project_unicom_tic\\modals\\marks_modal.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-22T13:59:40.596Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "623af708-03e2-4568-bf32-8a39151a8050",
-        "Display": 1,
-        "X": 83,
-        "Y": 39,
-        "Width": 1047,
-        "Height": 618,
-        "WindowState": 2
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 3,
@@ -377,10 +298,58 @@
               "RelativeDocumentMoniker": "C#_project_unicom_tic\\controlar\\marks__controlarClass.cs",
               "ToolTip": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\controlar\\marks__controlarClass.cs",
               "RelativeToolTip": "C#_project_unicom_tic\\controlar\\marks__controlarClass.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAowGkAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-22T14:25:30.494Z",
+              "WhenOpened": "2025-06-23T02:56:49.488Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "marks_Form.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\formes\\marks_Form.cs",
+              "RelativeDocumentMoniker": "C#_project_unicom_tic\\formes\\marks_Form.cs",
+              "ToolTip": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\formes\\marks_Form.cs [Design]",
+              "RelativeToolTip": "C#_project_unicom_tic\\formes\\marks_Form.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T13:14:02.51Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Time_table_form.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\formes\\Time_table_form.cs",
+              "RelativeDocumentMoniker": "C#_project_unicom_tic\\formes\\Time_table_form.cs",
+              "ToolTip": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\formes\\Time_table_form.cs [Design]",
+              "RelativeToolTip": "C#_project_unicom_tic\\formes\\Time_table_form.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T12:33:06.439Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "teacher detail_form.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\formes\\teacher detail_form.cs",
+              "RelativeDocumentMoniker": "C#_project_unicom_tic\\formes\\teacher detail_form.cs",
+              "ToolTip": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\formes\\teacher detail_form.cs [Design]",
+              "RelativeToolTip": "C#_project_unicom_tic\\formes\\teacher detail_form.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T02:28:23.439Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\formes\\Form1.cs",
+              "RelativeDocumentMoniker": "C#_project_unicom_tic\\formes\\Form1.cs",
+              "ToolTip": "C:\\Users\\kajaa\\OneDrive\\Desktop\\New folder\\C--project-UT010025\\C#_project_unicom_tic\\formes\\Form1.cs [Design]",
+              "RelativeToolTip": "C#_project_unicom_tic\\formes\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T02:07:55.738Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

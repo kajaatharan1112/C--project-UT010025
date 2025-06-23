@@ -31,7 +31,6 @@ namespace C__project_unicom_tic
             LoadForm_2(data); */
 
             pictureBox1.Visible = false;
-            button3.Visible = false;
             button6.Visible = false;
             button7.Visible = false;
             button8.Visible = false;
@@ -144,7 +143,7 @@ namespace C__project_unicom_tic
 
                         // Show dashboard/admin controls
                         pictureBox1.Visible = true;
-                        button3.Visible = true;
+                       // button3.Visible = true;
                         button6.Visible = true;
                         button7.Visible = true;
                         button8.Visible = true;
@@ -156,15 +155,15 @@ namespace C__project_unicom_tic
                         button14.Visible = true;
                         button15.Visible = true;
                     }
-                    else if (rool_id >= 100056 && rool_id <= 100249999)
+                    else if (rool_id >= 100056 && rool_id <= 249999)
                     {
                         // Show dashboard/admin controls
                         pictureBox1.Visible = true;
-                        button3.Visible = true;
+                       // button3.Visible = true;
                         button6.Visible = true;
                         button7.Visible = true;
                         button8.Visible = true;
-                        button9.Visible = false;
+                        button9.Visible = true;
                         button10.Visible = true;
                         button11.Visible = true;
                         button12.Visible = true;
@@ -176,7 +175,7 @@ namespace C__project_unicom_tic
                     {
                         // Show dashboard/admin controls
                         pictureBox1.Visible = true;
-                        button3.Visible = false;
+                       // button3.Visible = false;
                         button6.Visible = true;
                         button7.Visible = true;
                         button8.Visible = true;
@@ -188,15 +187,15 @@ namespace C__project_unicom_tic
                         button14.Visible = false;
                         button15.Visible = false;
                     }
-                    else if (rool_id >= 5005000 && rool_id <= 999999)
+                    else if (rool_id >= 500500 && rool_id <= 999999)
                     {
                         // Show dashboard/admin controls
                         pictureBox1.Visible = true;
-                        button3.Visible = false;
+                       /// button3.Visible = false;
                         button6.Visible = true;
                         button7.Visible = true;
                         button8.Visible = true;
-                        button9.Visible = true;
+                        button9.Visible = false;
                         button10.Visible = true;
                         button11.Visible = false;
                         button12.Visible = false;

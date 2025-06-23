@@ -103,6 +103,7 @@ namespace C__project_unicom_tic.controlar
                     cmd.Parameters.AddWithValue("@Student_Id", studentId);
                     cmd.Parameters.AddWithValue("@Exam_Id", examId);
                     cmd.ExecuteNonQuery();
+                    MessageBox.Show("Marks delet successfully!");
                 }
             }
         }

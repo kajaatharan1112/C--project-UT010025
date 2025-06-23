@@ -121,6 +121,7 @@
             this.label_show.Size = new System.Drawing.Size(341, 167);
             this.label_show.TabIndex = 34;
             this.label_show.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_show.Click += new System.EventHandler(this.label_show_Click);
             // 
             // label_nic_number
             // 
@@ -312,9 +313,9 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(526, 545);
+            this.button3.Location = new System.Drawing.Point(364, 545);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(400, 23);
             this.button3.TabIndex = 49;
             this.button3.Text = "clear";
             this.button3.UseVisualStyleBackColor = true;

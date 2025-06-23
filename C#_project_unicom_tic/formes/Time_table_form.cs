@@ -21,7 +21,11 @@ namespace C__project_unicom_tic.formes
         staf_controlar Staf_Controlar;
         public Time_table_form(int id_)
         {
-            Staf_Controlar = new staf_controlar();
+           
+
+
+
+                Staf_Controlar = new staf_controlar();
             InitializeComponent();
             id = id_;
             re_fresh();
@@ -56,7 +60,13 @@ namespace C__project_unicom_tic.formes
                 MessageBox.Show("No active teachers available.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
-
+            if (id_ >= 500500 && id_ <= 999999)
+            {
+                button_update.Visible = false;
+                button_add.Visible = false;
+                button_Delete.Visible = false;
+                ADD_EXAM.Visible = false;
+            }
 
         }
         public void re_fresh()

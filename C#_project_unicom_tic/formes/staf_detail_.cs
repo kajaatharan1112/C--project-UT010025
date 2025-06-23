@@ -25,8 +25,7 @@ namespace C__project_unicom_tic.formes
             vew(0);
 
 
-
-            textBox_user_name.Visible=false;
+                textBox_user_name.Visible=false;
             label_user_name.Visible = false;
             button1.Visible = false;
             label4.Visible = false;
@@ -36,6 +35,17 @@ namespace C__project_unicom_tic.formes
             label9.Visible = false;
             label10.Visible = false;
             label11.Visible = false;
+
+
+            if (id >= 100056 && id <= 249999)
+            {
+                button_add.Visible = false;
+                button_update.Visible = false;
+                button_Delete.Visible = false;
+                button2.Visible = false;
+                staf_detail.Visible = false;
+                button3.Visible = false;
+            }
         }
 
         private void vew(int dd)
@@ -393,6 +403,11 @@ namespace C__project_unicom_tic.formes
             button_Delete.Visible = false;
             vew(1);
             clear();
+        }
+
+        private void label_show_Click(object sender, EventArgs e)
+        {
+
         }
     }
     

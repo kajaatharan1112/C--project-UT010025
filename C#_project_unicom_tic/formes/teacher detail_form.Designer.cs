@@ -140,6 +140,7 @@
             this.label5.Size = new System.Drawing.Size(648, 76);
             this.label5.TabIndex = 68;
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // button1
             // 

@@ -21,7 +21,11 @@ namespace C__project_unicom_tic.formes
         public int TimeTable_id;
         public exam_Form(int id_)
         {
-            InitializeComponent();
+           
+
+
+
+                InitializeComponent();
             id = id_;
             Staf_Controlar = new staf_controlar();
 
@@ -52,6 +56,11 @@ namespace C__project_unicom_tic.formes
             {
                 comboBox1.DataSource = null;
                 MessageBox.Show("No active teachers available.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+            if (id_ >= 500500 && id_ <= 999999)
+            {
+                button2.Visible = false;
             }
         }
 
@@ -118,7 +127,7 @@ namespace C__project_unicom_tic.formes
             {
                 try
                 {
-                    update_id = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["Id"].Value);
+                    int update_id = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["Id"].Value);
                     label2.Text = update_id.ToString();
 
 
